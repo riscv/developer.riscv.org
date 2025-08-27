@@ -11,14 +11,14 @@ const config: Config = {
   staticDirectories: ['antora/build/', 'static'],
 
   // Set the production url of your site here
-  url: 'https://docs.riscv.org',
+  url: 'https://developer.riscv.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs.riscv.org/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'riscv-admin', // Usually your GitHub org/user name.
+  organizationName: 'riscv', // Usually your GitHub org/user name.
   projectName: 'docs.riscv.org', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
@@ -26,7 +26,7 @@ const config: Config = {
   onBrokenMarkdownLinks: 'warn',
 
   customFields:{
-    description: "All the developer resources for the RISC-V ecosystem.",
+    description: "Developer resources for the RISC-V ecosystem.",
   },
 
   // Even if you don't use internationalization, you can use this field to set
@@ -41,12 +41,13 @@ const config: Config = {
     [
       'classic',
       {
+        debug:true,
         docs: {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -56,8 +57,8 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -71,6 +72,11 @@ const config: Config = {
   ],
 
   themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
@@ -281,7 +287,7 @@ const config: Config = {
     },
     prism: {
       theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      // darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
 };
