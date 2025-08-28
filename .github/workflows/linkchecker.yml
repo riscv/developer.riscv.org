@@ -23,6 +23,8 @@ jobs:
   website-checker:
     name: ${{WEBSITE_URL}} Link Checker
     runs-on: ubuntu-latest
+    env:
+      WEBSITE_URL: developer.riscv.org
     continue-on-error: true
     steps:
       - name: Install Python
