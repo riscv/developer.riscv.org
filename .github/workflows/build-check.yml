@@ -1,0 +1,40 @@
+name: Build Check
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }} 
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm, yarn, antora'
+
+    - name: Install Docusaurus dependencies
+      run: yarn install
+
+    - name: Install Antora dependencies
+      run: |
+        cd antora
+        yarn install
+
+    - name: Build website
+      run: |
+        cd antora 
+        yarn build 
+        cd ..
+        yarn build
