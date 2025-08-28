@@ -1,8 +1,5 @@
 name: Link Checker
 
-env:
-  WEBSITE_URL: developer.riscv.org
-
 # Run this workflow every time a new commit pushed to your repository
 on:
   # Automatic Schedule Trigger
