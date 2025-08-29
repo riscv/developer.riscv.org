@@ -22,20 +22,26 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm, yarn, antora'
+        cache: 'yarn'
+    - name: Install Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.4.1' # Not needed with a .ruby-version, .tool-versions or mise.toml
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - name: Install Antora Dependencies
+      run: |
+        cd antora
+        gem install bundler
+        bundle install
+        npm install
 
     - name: Install Docusaurus dependencies
       run: yarn install
 
-    - name: Install Antora dependencies
-      run: |
-        cd antora
-        yarn install
-
     - name: Build website
       run: |
-        cd antora
-        yarn build 
+        cd antora 
+        npx antora antora-playbook.yml --stacktrace
         cd ..
         yarn build
 
