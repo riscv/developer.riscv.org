@@ -28,14 +28,14 @@ jobs:
       with:
         ruby-version: '3.4' # Not needed with a .ruby-version, .tool-versions or mise.toml
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - run: 
+    - run: |
         cd antora
         bundle install
         npm install
 
     - name: Install Docusaurus dependencies
       run: yarn install
-      
+
     - name: Build website
       run: |
         cd antora 
