@@ -39,9 +39,6 @@ jobs:
             --no-warnings  \
             -t 100 \
             -o html \
-            --ignore-url /internal/* \
-            --ignore-url /some_other_directory/~.* \
-            --ignore-url /*\.extension \
             $WEBSITE_URL > ./logs/$WEBSITE_URL.html
 
       - name: Process Link Log
