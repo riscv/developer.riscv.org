@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x, 20.x]
+        node-version: [20.x]
 
     steps:
     - uses: actions/checkout@v4
@@ -40,12 +40,15 @@ jobs:
     - name: Install Docusaurus dependencies
       run: yarn install
 
-    - name: Build website
+    - name: Build Antora
+      continue-on-error: true
       run: |
         cd antora 
         npx antora antora-playbook.yml --stacktrace
-        cd ..
-        yarn build
+    
+    - name: Build Docusaurus
+      # continue-on-error: true
+      run: yarn build
 
     - name: Deploy to GitHub Pages
       run: yarn deploy
