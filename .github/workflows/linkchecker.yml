@@ -4,6 +4,8 @@ env:
 
 # Run this workflow every time a new commit pushed to your repository
 on:
+  pull_request:
+    branches: [ "main" ]
   # Automatic Schedule Trigger
   schedule:
     # Run on 1st day of every month
@@ -26,8 +28,6 @@ jobs:
     steps:
       - name: Install Python
         uses: actions/setup-python@v5
-        with:
-          python-version: '3.8'
       - name: Setup Environment
         run: |
           pip3 install git+https://github.com/linkchecker/linkchecker.git
