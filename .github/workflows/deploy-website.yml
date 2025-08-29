@@ -1,6 +1,8 @@
 name: Build Check
 
 on:
+  pull_request:
+    branches: [ "main" ]
   push:
     branches: [ "main" ]
 
@@ -46,6 +48,7 @@ jobs:
         yarn build
 
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        folder: build # The folder the action should deploy.
+      run: yarn deploy
+      # uses: JamesIves/github-pages-deploy-action@v4
+      # with:
+      #   folder: build # The folder the action should deploy.
