@@ -26,9 +26,8 @@ jobs:
     - name: Install Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '2.7' # Not needed with a .ruby-version, .tool-versions or mise.toml
-        bundler: '1.17.2'
-        # bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+        ruby-version: '3.4.1' # Not needed with a .ruby-version, .tool-versions or mise.toml
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Install Antora Dependencies
       run: |
         cd antora
