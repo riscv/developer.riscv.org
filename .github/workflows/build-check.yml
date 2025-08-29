@@ -30,6 +30,7 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - run: |
         cd antora
+        gem install bundler
         bundle install
         npm install
 
