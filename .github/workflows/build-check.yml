@@ -23,7 +23,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
-    - name: Install Ruby ${{ ruby-version }}
+    - name: Install Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '2.7' # Not needed with a .ruby-version, .tool-versions or mise.toml
