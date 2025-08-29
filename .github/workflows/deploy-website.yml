@@ -1,4 +1,4 @@
-name: Build Check
+name: Deploy Portal
 
 on:
   pull_request:
