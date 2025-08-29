@@ -30,11 +30,11 @@ jobs:
     - name: Install Antora dependencies
       run: |
         cd antora
-        yarn install
+        npm install
 
     - name: Build website
       run: |
         cd antora 
-        yarn build 
+        npx antora antora-playbook.yml  
         cd ..
         yarn build
