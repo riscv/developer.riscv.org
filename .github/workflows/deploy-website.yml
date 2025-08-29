@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   deploy:
@@ -51,7 +51,7 @@ jobs:
       run: yarn build
 
     - name: Deploy to GitHub Pages
-      run: yarn deploy
-      # uses: JamesIves/github-pages-deploy-action@v4
-      # with:
-      #   folder: build # The folder the action should deploy.
+      # run: yarn deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: build # The folder the action should deploy.
