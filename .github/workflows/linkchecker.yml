@@ -1,4 +1,6 @@
-name: Link Checker 
+name: Link Checker
+env:
+  WEBSITE_URL: "developer.riscv.org"
 
 # Run this workflow every time a new commit pushed to your repository
 on:
@@ -18,14 +20,12 @@ on:
 
 jobs:
   website-checker:
-    name: ${{WEBSITE_URL}} Link Checker
+    name: $WEBSITE_URL Link Checker
     runs-on: ubuntu-latest
-    env:
-      WEBSITE_URL: developer.riscv.org
     continue-on-error: true
     steps:
       - name: Install Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: '3.8'
       - name: Setup Environment
@@ -53,11 +53,11 @@ jobs:
           echo $GITHUB_ENV
 
       - name: Upload Artifact Logs
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         if: ${{ always() }}
         with:
-          name: ${{WEBSITE_URL}}.html
-          path: ./logs/${{WEBSITE_URL}}.html
+          name: $WEBSITE_URL.html
+          path: ./logs/$WEBSITE_URL.html
 
       # # Slack Notification of broken links found
       # - name: Slack Notification
@@ -67,9 +67,9 @@ jobs:
       #     SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       #     SLACK_CHANNEL: channel_name
       #     SLACK_USERNAME: Link Checker Bot
-      #     SLACK_TITLE: WARNING - broken links found on ${{WEBSITE_URL}}
+      #     SLACK_TITLE: WARNING - broken links found on $WEBSITE_URL
       #     MSG_MINIMAL: true
       #     SLACK_ICON_EMOJI: ':failed:'
       #     SLACK_MESSAGE: |
       #       `${{ env.LC_SUMMARY }}`
-      #       link check: broken links detected on ${{WEBSITE_URL}}. Please see report artifact.
+      #       link check: broken links detected on $WEBSITE_URL. Please see report artifact.
