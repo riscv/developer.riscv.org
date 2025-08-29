@@ -24,11 +24,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
     - uses: ruby/setup-ruby@v1
-      name: Install Antora Dependencies
+      name: Install Ruby ${{ ruby-version }}
       with:
         ruby-version: '2.7' # Not needed with a .ruby-version, .tool-versions or mise.toml
+        bundler: '1.17.2'
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - run: |
+    - name: Install Antora Dependencies
+      run: |
         cd antora
         gem install bundler
         bundle install
