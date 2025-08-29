@@ -35,6 +35,6 @@ jobs:
     - name: Build website
       run: |
         cd antora 
-        npx antora antora-playbook.yml  
+        npx antora antora-playbook.yml --stacktrace
         cd ..
         yarn build
