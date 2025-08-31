@@ -15,7 +15,9 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
+  plugins: [
+      'docusaurus-plugin-sass'
+    ],
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'riscv', // Usually your GitHub org/user name.
@@ -24,7 +26,6 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
   customFields:{
     description: "Developer resources for the RISC-V ecosystem.",
   },
@@ -65,7 +66,7 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.scss'),
         },
       } satisfies Preset.Options,
     ],
@@ -215,6 +216,7 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} RISC-V International`,
     },
+   
 
     // plugins: [
     //   [

@@ -8,141 +8,321 @@ import siteConfig from '@site/docusaurus.config';
 
 The RISC-V Library contains a comprehensive list of all of the ratified RISC-V technical publications.
 
+<div className='grid-bg-1' id='isa-spec'>
 ## Instruction Set (ISA) Specifications
 
 These are the current ratified versions of the ISA specifications. Previously published versions and the original ratification specifications for included extensions can be found on the [RISC-V Technical Specifications Archive page](https://lf-riscv.atlassian.net/wiki/spaces/HOME/pages/16154899/RISC-V+Technical+Specifications+Archive).
 
-<Columns className='padding--lg margin-bottom-xl' > 
-	<Column className="text--center col--3">
-	    <Card shadow='tl'>
-		    <CardHeader>
-		      <h3>ISA Volume I</h3>
-		    </CardHeader>
-		    <CardBody>
-		      Unprivileged Architecture
-		    </CardBody>
-		    <CardFooter>
-		    	<a href={`${siteConfig.baseUrl}isa`}>
-		    	<button className='button button--secondary button--block'>Version: May 2024</button>
-		    	</a>
-		    </CardFooter>
-	  	</Card>
-	</Column>
-
-	<Column className="text--center col--3">
-	    <Card shadow='tl'>
-		    <CardHeader>
-		      <h3>Volume II</h3>
-		    </CardHeader>
-		    <CardBody>
-		      Privileged Architecture
-		    </CardBody>
-		    <CardFooter>
-		    	<a href={`${siteConfig.baseUrl}isa`}>
-		    	<button className='button button--secondary button--block'>Version: May 2024</button>
-		  		</a>
-		    </CardFooter>
-	  	</Card>
-	</Column>
-</Columns>
-
+<RvCardGrid>
+  <RvCard pdfLinks={[{href: 'www.google.com', label: 'test123'}]} title='ISA Volume I' buttonLabel='View Spec' buttonHref={`${siteConfig.baseUrl}isa`}>
+    <ul>
+      <li>Lorem ipsum dolor sit amet consectetur <a>adipiscing elit</a></li>
+      <li>Consectetur adipiscing elit quisque faucibus</li>
+      <li>Ex sapien vitae pellentesque sem</li>
+    </ul>
+  </RvCard>
+  <RvCard title='ISA Volume II' buttonLabel='Version: May 2024' buttonHref={`${siteConfig.baseUrl}isa`}>
+    <ul>
+      <li>Lorem ipsum dolor sit amet consectetur</li>
+      <li>Consectetur adipiscing elit quisque faucibus <a>ex sapien vitae</a></li>
+      <li>Ex sapien vitae pellentesque sem</li>
+    </ul>
+  </RvCard>
+</RvCardGrid>
 :::note
 Extensions that are ratified, but not yet included in the full specifications, can be found on the [RISC-V Ratified Extensions](https://lf-riscv.atlassian.net/wiki/spaces/HOME/pages/16154732/Ratified+Extensions) page.
 :::
+</div>
 
 ---
+<div className='grid-bg-2' id='profiles'>
 ## Profiles
 
 These are the current, published versions of the Profiles specifications.
 
 <Columns className='padding--lg margin-bottom-xl'> 
-	<Column className="text--center col--3">
-	    <Card shadow='tl'>
-		    <CardHeader>
-		      <h3>RVA23 Profile</h3>
-		    </CardHeader>
-		    <CardBody>
-		      Focused on Servers and application class processors.
-		    </CardBody>
-		    <CardFooter>
-		    	<a href={`${siteConfig.baseUrl}docs/spec/profiles/rva23`}>
-		    	<button className='button button--secondary button--block'>Version: October 2024</button>
-		    	</a>
-		    </CardFooter>
-	  	</Card>
-	</Column>
+  <Column className="text--center col--3">
+      <Card shadow='tl'>
+        <CardHeader>
+          <h3>RVA23 Profile</h3>
+        </CardHeader>
+        <CardBody>
+          Focused on Servers and application class processors.
+        </CardBody>
+        <CardFooter>
+          <a href={`${siteConfig.baseUrl}docs/spec/profiles/rva23`}>
+          <button className='button button--secondary button--block'>Version: October 2024</button>
+          </a>
+        </CardFooter>
+      </Card>
+  </Column>
 
-	<Column className="text--center col--3">
-	    <Card shadow='tl'>
-		    <CardHeader>
-		      <h3>RVB23 Profile</h3>
-		    </CardHeader>
-		    <CardBody>
-		      Focused on Edge embedded Devices. 
-		    </CardBody>
-		    <CardFooter>
-		    	<a href={`${siteConfig.baseUrl}docs/spec/profiles/rvb23`}>
-		    	<button className='button button--secondary button--block'>Version: October 2024</button>
-		  		</a>
-		    </CardFooter>
-	  	</Card>
-	</Column>
+  <Column className="text--center col--3">
+      <Card shadow='tl'>
+        <CardHeader>
+          <h3>RVB23 Profile</h3>
+        </CardHeader>
+        <CardBody>
+          Focused on Edge embedded Devices. 
+        </CardBody>
+        <CardFooter>
+          <a href={`${siteConfig.baseUrl}docs/spec/profiles/rvb23`}>
+          <button className='button button--secondary button--block'>Version: October 2024</button>
+          </a>
+        </CardFooter>
+      </Card>
+  </Column>
 
-		<Column className="text--center col--3">
-	    <Card shadow='tl'>
-		    <CardHeader>
-		      <h3>RISC-V Profiles</h3>
-		    </CardHeader>
-		    <CardBody>
-		      The older profiles. Archived for historical purposes
-		    </CardBody>
-		    <CardFooter>
-		    	<a href={`${siteConfig.baseUrl}docs/spec/profiles/riscv-profiles`}>
-		    	<button className='button button--secondary button--block'>Version: March 2023</button>
-		  		</a>
-		    </CardFooter>
-	  	</Card>
-	</Column>
+  <Column className="text--center col--3">
+      <Card shadow='tl'>
+        <CardHeader>
+          <h3>RISC-V Profiles</h3>
+        </CardHeader>
+        <CardBody>
+          The older profiles. Archived for historical purposes
+        </CardBody>
+        <CardFooter>
+          <a href={`${siteConfig.baseUrl}docs/spec/profiles/riscv-profiles`}>
+          <button className='button button--secondary button--block'>Version: March 2023</button>
+          </a>
+        </CardFooter>
+      </Card>
+  </Column>
 </Columns>
+</div>
 
 ---
+<div className='grid-bg-3' id='processor-infra'>
 ## Processor Infrastructure
-- [RISC-V Advanced Interrupt Architecture](./non-isa/advanced-interrupt)
-- [RISC-V IO Mapping Table Specification](./non-isa/io-mapping)
-- [RISC-V IOMMU Architecture Specification  ](./non-isa/iommu-architecture)
-- [RISC-V Platform-Level Interrupt Controller Specification](./non-isa/platform-interrupt)
-- [RISC-V Server SOC Specification](./non-isa/server-soc)
 
+<RvCardGrid>
+  <RvCard title='RISC-V Advanced Interrupt Architecture' buttonLabel='View Spec' buttonHref='./non-isa/advanced-interrupt'>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum imperdiet.</p>
+  </RvCard>
+  <RvCard title='RISC-V IO Mapping Table Specification' buttonLabel='View Spec' buttonHref='./non-isa/io-mapping'>
+    <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+  </RvCard>
+  <RvCard title='RISC-V IOMMU Architecture Specification' buttonLabel='View Spec' buttonHref='./non-isa/iommu-architecture'>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum.</p>
+  </RvCard>
+  <RvCard title='RISC-V Platform-Level Interrupt Controller Specification' buttonLabel='View Spec' buttonHref='./non-isa/platform-interrupt'>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum imperdiet.</p>
+  </RvCard>
+  <RvCard title='RISC-V Server SOC Specification' buttonLabel='View Spec' buttonHref='./non-isa/server-soc'>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </RvCard>
+</RvCardGrid>
+</div>
+
+---
+<div className='grid-bg-4'>
 ## Debug, Trace, & RAS
-- [The RISC-V Debug Specification](./non-isa/debug)
-- [Efficient Trace for RISC-V](./non-isa/efficient-trace)
-- [RISC-V N-Trace (Nexus-based Trace)](./non-isa/n-trace)
-- [RISC-V Capacity and Bandwidth QoS Register Interface](./non-isa/qos)
-- [RISC-V RERI Architecture Specification](./non-isa/reri)
-- [RISC-V Trace Connectors](./non-isa/trace-conectors)
-- [RISC-V Trace Control Interface](./non-isa/trace-control-interface)
-- [Unformatted Trace & Diagnostic Data Packet Encapsulation for RISC-V](./non-isa/unformatted-trace)
 
+<Columns className='padding--lg margin-bottom-xl'>
+  <Column className="text--center col--3">
+    <Card shadow='tl'>
+      <CardHeader><h3>The RISC-V Debug Specification</h3></CardHeader>
+      <CardBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt.</CardBody>
+      <CardFooter>
+        <a href='./non-isa/debug'>
+          <button className='button button--secondary button--block'>View Spec</button>
+        </a>
+      </CardFooter>
+    </Card>
+  </Column>
+  
+  <Column className="text--center col--3">
+    <Card shadow='tl'>
+      <CardHeader><h3>Efficient Trace for RISC-V</h3></CardHeader>
+      <CardBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</CardBody>
+      <CardFooter>
+        <a href='./non-isa/efficient-trace'>
+          <button className='button button--secondary button--block'>View Spec</button>
+        </a>
+      </CardFooter>
+    </Card>
+  </Column>
+
+  <Column className="text--center col--3">
+    <Card shadow='tl'>
+      <CardHeader><h3>RISC-V N-Trace (Nexus-based Trace)</h3></CardHeader>
+      <CardBody>Lorem ipsum dolor sit amet, consectetur adipiscing.</CardBody>
+      <CardFooter>
+        <a href='./non-isa/n-trace'>
+          <button className='button button--secondary button--block'>View Spec</button>
+        </a>
+      </CardFooter>
+    </Card>
+  </Column>
+
+  <Column className="text--center col--3">
+    <Card shadow='tl'>
+      <CardHeader><h3>RISC-V Capacity and Bandwidth QoS Register Interface</h3></CardHeader>
+      <CardBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt lorem nec.</CardBody>
+      <CardFooter>
+        <a href='./non-isa/qos'>
+          <button className='button button--secondary button--block'>View Spec</button>
+        </a>
+      </CardFooter>
+    </Card>
+  </Column>
+
+  <Column className="text--center col--3">
+    <Card shadow='tl'>
+      <CardHeader><h3>RISC-V RERI Architecture Specification</h3></CardHeader>
+      <CardBody>Lorem ipsum dolor sit amet, consectetur.</CardBody>
+      <CardFooter>
+        <a href='./non-isa/reri'>
+          <button className='button button--secondary button--block'>View Spec</button>
+        </a>
+      </CardFooter>
+    </Card>
+  </Column>
+
+  <Column className="text--center col--3">
+    <Card shadow='tl'>
+      <CardHeader><h3>RISC-V Trace Connectors</h3></CardHeader>
+      <CardBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</CardBody>
+      <CardFooter>
+        <a href='./non-isa/trace-conectors'>
+          <button className='button button--secondary button--block'>View Spec</button>
+        </a>
+      </CardFooter>
+    </Card>
+  </Column>
+
+  <Column className="text--center col--3">
+    <Card shadow='tl'>
+      <CardHeader><h3>RISC-V Trace Control Interface</h3></CardHeader>
+      <CardBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</CardBody>
+      <CardFooter>
+        <a href='./non-isa/trace-control-interface'>
+          <button className='button button--secondary button--block'>View Spec</button>
+        </a>
+      </CardFooter>
+    </Card>
+  </Column>
+
+  <Column className="text--center col--3">
+    <Card shadow='tl'>
+      <CardHeader><h3>Unformatted Trace & Diagnostic Data Packet Encapsulation for RISC-V</h3></CardHeader>
+      <CardBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque.</CardBody>
+      <CardFooter>
+        <a href='./non-isa/unformatted-trace'>
+          <button className='button button--secondary button--block'>View Spec</button>
+        </a>
+      </CardFooter>
+    </Card>
+  </Column>
+</Columns>
+</div>
+
+---
+<div className='grid-bg-5'>
 ## Platform Software
-- [RISC-V Functional Fixed Hardware Specification](./non-isa/functional-fixed)
-- [RISC-V Semihosting](./non-isa/semihosting)
-- [RISC-V Supervisor Binary Interface Specification](./non-isa/sbi)
-- [RISC-V UEFI Protocol Specification](./non-isa/uefi)
 
+<RvCardGrid>
+  <RvCard title='RISC-V Functional Fixed Hardware Specification' buttonLabel='View Spec' buttonHref='./non-isa/functional-fixed'>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet.</p>
+  </RvCard>
+  <RvCard title='RISC-V Semihosting' buttonLabel='View Spec' buttonHref='./non-isa/semihosting'>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </RvCard>
+  <RvCard title='RISC-V Supervisor Binary Interface Specification' buttonLabel='View Spec' buttonHref='./non-isa/sbi'>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum imperdiet.</p>
+  </RvCard>
+  <RvCard title='RISC-V UEFI Protocol Specification' buttonLabel='View Spec' buttonHref='./non-isa/uefi'>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </RvCard>
+</RvCardGrid>
+</div>
+
+---
+<div className='grid-bg-6'>
 ## Application Software
-- [RISC-V ABIs Specification](./non-isa/abi)
 
+<Columns className='padding--lg margin-bottom-xl'>
+  <Column className="text--center col--3">
+    <Card shadow='tl'>
+      <CardHeader><h3>RISC-V ABIs Specification</h3></CardHeader>
+      <CardBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt.</CardBody>
+      <CardFooter>
+        <a href='./non-isa/abi'>
+          <button className='button button--secondary button--block'>View Spec</button>
+        </a>
+      </CardFooter>
+    </Card>
+  </Column>
+</Columns>
+</div>
+
+---
+<div className='grid-bg-1'>
 ## Guides
-- [Authoring and Editing RISC-V Specifications](https://github.com/riscv/docs-dev-guide/releases/tag/v0.2.0-example)
 
+<RvCardGrid>
+  <RvCard title='Authoring and Editing RISC-V Specifications' buttonLabel='View Guide' buttonHref='https://github.com/riscv/docs-dev-guide/releases/tag/v0.2.0-example'>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet, nulla et.</p>
+  </RvCard>
+</RvCardGrid>
+</div>
+
+---
+<div className='grid-bg-2'>
 ## Glossary
-- Terms
-- Acronyms
-- Alphabetical listing of Extensions
-- CSRs
+
+<Columns className='padding--lg margin-bottom-xl'>
+  <Column className="text--center col--3">
+    <Card shadow='tl'>
+      <CardHeader><h3>Terms</h3></CardHeader>
+      <CardBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</CardBody>
+      <CardFooter>
+        <a href='#'>
+          <button className='button button--secondary button--block'>View</button>
+        </a>
+      </CardFooter>
+    </Card>
+  </Column>
+
+  <Column className="text--center col--3">
+    <Card shadow='tl'>
+      <CardHeader><h3>Acronyms</h3></CardHeader>
+      <CardBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt.</CardBody>
+      <CardFooter>
+        <a href='#'>
+          <button className='button button--secondary button--block'>View</button>
+        </a>
+      </CardFooter>
+    </Card>
+  </Column>
+
+  <Column className="text--center col--3">
+    <Card shadow='tl'>
+      <CardHeader><h3>Alphabetical listing of Extensions</h3></CardHeader>
+      <CardBody>Lorem ipsum dolor sit amet, consectetur.</CardBody>
+      <CardFooter>
+        <a href='#'>
+          <button className='button button--secondary button--block'>View</button>
+        </a>
+      </CardFooter>
+    </Card>
+  </Column>
+
+  <Column className="text--center col--3">
+    <Card shadow='tl'>
+      <CardHeader><h3>CSRs</h3></CardHeader>
+      <CardBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque.</CardBody>
+      <CardFooter>
+        <a href='#'>
+          <button className='button button--secondary button--block'>View</button>
+        </a>
+      </CardFooter>
+    </Card>
+  </Column>
+</Columns>
+</div>
 
 ---
 :::note
 If you do not see a specification in this library, visit the [RISC-V GitHub `riscv-non-isa`](https://github.com/riscv-non-isa) organization to see a complete list of all specifications that have been developed or are presently under development.
 :::
-  

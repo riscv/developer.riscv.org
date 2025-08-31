@@ -1,0 +1,51 @@
+@use "./globals.scss" as *;
+@use "sass:map";
+
+// Helper map
+$bg-order: (
+  1: "teal",
+  2: "pink",
+  3: "purple",
+  4: "teal",
+  5: "pink",
+  6: "purple",
+);
+/* -------------------
+   Light Mode (desaturated)
+   ------------------- */
+[data-theme="light"] {
+  @each $num, $key in $bg-order {
+    $color: map.get($colors-desaturated, $key);
+    $angle: if($num % 2 == 0, -135deg, 135deg); // alternate directions
+
+    .grid-bg-#{$num} {
+      background: linear-gradient($angle, $color, #ffffff);
+      color: #222222;
+
+      .rv-button {
+        background: $accent;
+        color: $primary;
+      }
+    }
+  }
+}
+/* -------------------
+   Dark Mode (saturated)
+   ------------------- */
+[data-theme="dark"] {
+  @each $num, $key in $bg-order {
+    $color: map.get($colors-saturated, $key);
+    $angle: if($num % 2 == 0, -135deg, 135deg); // alternate directions
+
+    .grid-bg-#{$num} {
+      background: linear-gradient($angle, $color, #000000);
+      color: #f0f6fc;
+
+      .rv-button {
+        background: $accent;
+        color: $primary-dark;
+      }
+    }
+  }
+}
+

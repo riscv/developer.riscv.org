@@ -1,0 +1,85 @@
+@use "../../css/globals.scss" as *;
+
+.rv-card {
+  display: flex;
+  flex-direction: column;
+  border: 0.2rem solid var(--color-border);
+  border-radius: 0.7rem;
+  color: var(--color-text);
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  margin-top: 1rem;
+
+  .rv-header {
+    font-weight: 700;
+    padding: 5px;
+  }
+
+  .rv-content {
+    flex: 1;
+    line-height: 1.5;
+    padding-left: 20px;
+    a {
+      color: var(--color-link);
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--color-link-hover);
+      }
+
+      &:focus {
+        color: var(--color-link-hover);
+      }
+    }
+  }
+
+  .rv-footer {
+    margin-top: auto;
+    align-self: center;
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin-bottom: 10px;
+
+    .rv-a-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background: var(--color-primary);
+      color: --var(--color-link);
+      font-size: var(--text-sm);
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.1s ease,
+        box-shadow 0.2s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border: 2px solid var(--color-border);
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+      width: 100%;
+      height: 100%;
+      &:hover {
+        background: var(--color-link-hover);
+        color: var(--color-primary);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      &:focus {
+        outline: 2px solid var(--color-accent);
+        outline-offset: 2px;
+      }
+    }
+    .rv-button {
+      background-color: $accent;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
