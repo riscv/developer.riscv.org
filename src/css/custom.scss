@@ -2,5 +2,7 @@
    Imports
    --------------------------------------------------- */
 
-@use '/src/css/globals.scss';
-@use '/src/css/gradient-backgrounds.scss';
+@use './globals.scss';
+@use './gradient-backgrounds.scss';
+@use './headers.scss';
+@use './navbar.scss'

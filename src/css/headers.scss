@@ -1,0 +1,11 @@
+@use './globals.scss' as *;
+
+.page-header {
+    background-color: $primary;
+    color: $accent;
+    width: 100%;
+}
+
+.sub-header {
+    text-decoration: underline;
+}
