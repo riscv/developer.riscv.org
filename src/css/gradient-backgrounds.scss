@@ -21,11 +21,8 @@ $bg-order: (
     .grid-bg-#{$num} {
       background: linear-gradient($angle, $color, #ffffff);
       color: #222222;
-
-      .rv-button {
-        background: $accent;
-        color: $primary;
-      }
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
   }
 }
@@ -40,11 +37,8 @@ $bg-order: (
     .grid-bg-#{$num} {
       background: linear-gradient($angle, $color, #000000);
       color: #f0f6fc;
-
-      .rv-button {
-        background: $accent;
-        color: $primary-dark;
-      }
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
   }
 }
