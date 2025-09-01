@@ -11,16 +11,20 @@
   width: 100%;
   align-items: flex-start;
   margin-top: 1rem;
+  flex-grow: 1;
+  flex-basis: 0;
 
   .rv-header {
     font-weight: 700;
     padding: 5px;
+    flex-grow: 0;
   }
 
   .rv-content {
-    flex: 1;
+    flex-grow: 1;
     line-height: 1.5;
     padding-left: 20px;
+    min-width: 0;
     a {
       color: var(--color-link);
       font-weight: 600;
@@ -42,8 +46,9 @@
     align-self: center;
     display: flex;
     width: 90%;
-    height: 100%;
+    height: auto;
     margin-bottom: 10px;
+    flex-grow: 0;
 
     .rv-a-button {
       display: inline-flex;
