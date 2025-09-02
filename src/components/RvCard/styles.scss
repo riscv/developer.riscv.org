@@ -55,7 +55,6 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      background: var(--color-primary);
       color: --var(--color-link);
       font-size: var(--text-sm);
       border-radius: var(--radius-md);
@@ -85,6 +84,16 @@
       background-color: $accent;
       height: 100%;
       width: 100%;
+    }
+    .rv-pdf-button {
+      @extend .rv-a-button;
+      background-color: $accent-light;
+       &:hover {
+        background: var($accent);
+        color: var(--color-primary);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
     }
   }
 }
