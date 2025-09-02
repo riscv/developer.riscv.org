@@ -29,6 +29,7 @@ import TimelineItem from '@site/src/components/Timeline/TimelineItem';
 import PDF from '@site/src/components/PDF';
 import RvCard from '../components/RvCard';
 import RvCardGrid from '../components/RvCardGrid';
+import RvCardVersioning from '../components/RvCardVersioning';
 
 library.add(fab, fas);
 
@@ -53,5 +54,6 @@ export default {
     TimelineItem,
     PDF,
     RvCard,
-    RvCardGrid
+    RvCardGrid,
+    RvCardVersioning
 };

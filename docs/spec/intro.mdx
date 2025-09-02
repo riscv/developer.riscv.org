@@ -22,21 +22,25 @@ import siteConfig from '@site/docusaurus.config';
 
 <div className='grid-bg-1' id='isa-spec'>
 <div className='sub-header'>
-## Instruction Set (ISA) Specifications
+## RISC-V Instruction Set (ISA) Specifications
 </div>
 These are the current ratified versions of the ISA specifications. Previously published versions and the original ratification specifications for included extensions can be found on the [RISC-V Technical Specifications Archive page](https://lf-riscv.atlassian.net/wiki/spaces/HOME/pages/16154899/RISC-V+Technical+Specifications+Archive).
 
 <RvCardGrid>
-  <RvCard pdfLinks={[{href: 'www.google.com', label: 'test123'}]} title='ISA Volume I' buttonLabel='View Spec' buttonHref={`${siteConfig.baseUrl}isa`}>
+  <RvCard pdfLinks={[{href: 'www.google.com', label: 'test123'}]} title='ISA Volume I - Unpriv' buttonLabel='View Spec' buttonHref={`${siteConfig.baseUrl}isa`}>
+    <RvCardVersioning>
+    <p>Version: 20250508</p>
+    <p>Published: May 2025</p>
+    </RvCardVersioning>
     <ul>
-      <li>Lorem ipsum dolor sit amet consectetur <a>adipiscing elit</a></li>
+      <li>Lorem ipsum dolor sit amet consectetur <a>Unprivilaged Architecture</a></li>
       <li>Consectetur adipiscing elit quisque faucibus</li>
-      <li>Ex sapien vitae pellentesque sem</li>
+      <li>Ratified by the <a href='https://lists.riscv.org/g/tech-unprivileged'>Unprivileged Horizontal Committee</a></li>
     </ul>
   </RvCard>
-  <RvCard title='ISA Volume II' buttonLabel='Version: May 2024' buttonHref={`${siteConfig.baseUrl}isa`}>
+  <RvCard title='ISA Volume II - Priv' buttonLabel='Version: May 2024' buttonHref={`${siteConfig.baseUrl}isa`}>
     <ul>
-      <li>Lorem ipsum dolor sit amet consectetur</li>
+      <li>Privilaged Architecture</li>
       <li>Consectetur adipiscing elit quisque faucibus <a>ex sapien vitae</a></li>
       <li>Ex sapien vitae pellentesque sem</li>
     </ul>
