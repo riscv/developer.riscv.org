@@ -31,7 +31,6 @@ export default function RvCard({
       <div className="rv-content">{children}</div>
 
       <div className="rv-footer">
-        {pdfLinks && <RvPDFMenu items={pdfLinks} />}
         <a
           className="rv-a-button"
           href={buttonHref}
@@ -41,6 +40,7 @@ export default function RvCard({
         >
           {buttonLabel}
         </a>
+        {pdfLinks && <RvPDFMenu items={pdfLinks} />}
       </div>
     </div>
   );
