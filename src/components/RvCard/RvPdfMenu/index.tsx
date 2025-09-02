@@ -6,6 +6,9 @@ export type DownloadItem = {
   label: string;
 };
 
+
+// NOTE: THIS FILE IS CURRENTLY NOT IN USE.
+
 export function RvPDFMenu({ items }: { items: DownloadItem[] }) {
   const [open, setOpen] = useState(false);
   const buttonRef = useRef(null);
