@@ -1,5 +1,4 @@
 import { JSX } from "react";
-import { RvPDFMenu, DownloadItem } from "./RvPdfMenu/index";
 import "./styles.scss";
 import Link from "@docusaurus/Link";
 
@@ -26,7 +25,7 @@ export default function RvCard({
   const headerId = `${title.replace(/\s+/g, "-").toLowerCase()}-header`;
 
   return (
-    <div className="rv-card" role="region" aria-labelledby={headerId}>
+    <div className="rv-card-2" role="region" aria-labelledby={headerId}>
       <Heading id={headerId} className="rv-header">
         {title}
       </Heading>

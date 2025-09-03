@@ -31,6 +31,7 @@ import RvCard from '../components/RvCard';
 import RvCardGrid from '../components/RvCardGrid';
 import RvCardVersioning from '../components/RvCardVersioning';
 import DetailsTable from '../components/DetailsTable';
+import RvCardV2 from '../components/RvCardV2'
 
 library.add(fab, fas);
 
@@ -57,5 +58,6 @@ export default {
     RvCard,
     RvCardGrid,
     RvCardVersioning,
-    DetailsTable
+    DetailsTable,
+    RvCardV2
 };

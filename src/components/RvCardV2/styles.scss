@@ -1,18 +1,19 @@
 @use "../../css/globals.scss" as *;
 
-.rv-card {
+.rv-card-2 {
   display: flex;
   flex-direction: column;
-  border: 0.2rem solid var(--color-border);
   border-radius: 0.7rem;
   color: var(--color-text);
-  background: transparent;
+  background: white;
   height: 100%;
   width: 100%;
   align-items: flex-start;
   margin-top: 1rem;
   flex-grow: 1;
   flex-basis: 0;
+  box-shadow: var(--ifm-global-shadow-tl);
+  padding: 10px 10px;
 
   .rv-header {
     font-weight: 700;
@@ -49,9 +50,10 @@
     height: auto;
     margin-bottom: 10px;
     flex-grow: 0;
+    align-items: stretch;
 
     .rv-a-button {
-      display: inline-flex;
+      display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
@@ -80,16 +82,13 @@
         outline-offset: 2px;
       }
     }
-    .rv-button {
-      background-color: $accent;
-      height: 100%;
-      width: 100%;
-    }
     .rv-pdf-button {
       @extend .rv-a-button;
+      min-width: 0;
       background-color: $accent-light;
+      flex-grow: 1;
       &:hover {
-        background: var($accent);
+        background: $accent;
         color: var(--color-primary);
         transform: translateY(-1px);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);

@@ -49,55 +49,29 @@ These are the current ratified versions of the ISA specifications. Previously pu
 
 These are the current, published versions of the Profiles specifications.
 
-<Columns className='padding--lg margin-bottom-xl'> 
-  <Column className="text--center col--3">
-      <Card shadow='tl'>
-        <CardHeader>
-          <h3>RVA23 Profile</h3>
-        </CardHeader>
-        <CardBody>
-          Focused on Servers and application class processors.
-        </CardBody>
-        <CardFooter>
-          <a href={`${siteConfig.baseUrl}docs/spec/profiles/rva23`}>
-          <button className='button button--secondary button--block'>Version: October 2024</button>
-          </a>
-        </CardFooter>
-      </Card>
-  </Column>
-
-  <Column className="text--center col--3">
-      <Card shadow='tl'>
-        <CardHeader>
-          <h3>RVB23 Profile</h3>
-        </CardHeader>
-        <CardBody>
-          Focused on Edge embedded Devices. 
-        </CardBody>
-        <CardFooter>
-          <a href={`${siteConfig.baseUrl}docs/spec/profiles/rvb23`}>
-          <button className='button button--secondary button--block'>Version: October 2024</button>
-          </a>
-        </CardFooter>
-      </Card>
-  </Column>
-
-  <Column className="text--center col--3">
-      <Card shadow='tl'>
-        <CardHeader>
-          <h3>RISC-V Profiles</h3>
-        </CardHeader>
-        <CardBody>
-          The older profiles. Archived for historical purposes
-        </CardBody>
-        <CardFooter>
-          <a href={`${siteConfig.baseUrl}docs/spec/profiles/riscv-profiles`}>
-          <button className='button button--secondary button--block'>Version: March 2023</button>
-          </a>
-        </CardFooter>
-      </Card>
-  </Column>
-</Columns>
+<RvCardGrid>
+  <RvCardV2 pdfLink='www.google.com' title='RVA23 Profile' buttonLabel='Version: October 2024' buttonHref={`${siteConfig.baseUrl}docs/spec/profiles/rva23`}>
+    <RvCardVersioning>
+       <p>Version: 20250508</p>
+       <p>Published: May 2025</p>
+    </RvCardVersioning>
+    <p>Focused on Servers and application class processors.</p>
+  </RvCardV2>
+  <RvCardV2 pdfLink='www.google.com' title='RVB23 Profile' buttonLabel='Version: October 2024' buttonHref={`${siteConfig.baseUrl}docs/spec/profiles/rvb23`}>
+    <RvCardVersioning>
+       <p>Version: 20250508</p>
+       <p>Published: May 2025</p>
+    </RvCardVersioning>
+    <p>Focused on Edge embedded Devices.</p>
+  </RvCardV2>
+  <RvCardV2 title='RISC-V Profiles' buttonLabel='Version: March 2023' buttonHref={`${siteConfig.baseUrl}docs/spec/profiles/riscv-profiles`}>
+    <RvCardVersioning>
+       <p>Version: 20250508</p>
+       <p>Published: May 2025</p>
+    </RvCardVersioning>
+    <p>The older profiles. Archived for historical purposes</p>
+  </RvCardV2>
+</RvCardGrid>
 </div>
 
 ---
