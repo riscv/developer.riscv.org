@@ -8,6 +8,7 @@ interface RvCardProps {
   buttonHref: string;
   children: React.ReactNode;
   pdfLink?: string;
+  details?: string;
   headingLevel?: keyof JSX.IntrinsicElements; // e.g. "h2" | "h3" | "h4"
 }
 
@@ -18,6 +19,7 @@ export default function RvCard({
   buttonHref,
   headingLevel: Heading = "h2",
   pdfLink,
+  details
 }: RvCardProps) {
   // Generate a safe ID from the title (for aria-labelledby)
   const headerId = `${title.replace(/\s+/g, "-").toLowerCase()}-header`;
@@ -42,6 +44,7 @@ export default function RvCard({
         </a>
         {pdfLink && <a className="rv-pdf-button">Download PDF</a>}
       </div>
+      {details && <div className="rv-details"><a href={details}>More Details</a></div>}
     </div>
   );
 }

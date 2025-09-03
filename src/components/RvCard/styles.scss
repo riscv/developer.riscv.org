@@ -40,7 +40,6 @@
       }
     }
   }
-
   .rv-footer {
     margin-top: auto;
     align-self: center;
@@ -88,12 +87,17 @@
     .rv-pdf-button {
       @extend .rv-a-button;
       background-color: $accent-light;
-       &:hover {
+      &:hover {
         background: var($accent);
         color: var(--color-primary);
         transform: translateY(-1px);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
       }
     }
+  }
+  .rv-details {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
