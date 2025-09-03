@@ -34,15 +34,15 @@ export default function RvCard({
       <div className="rv-content">{children}</div>
 
       <div className="rv-footer">
-        <a
+        <Link
           className="rv-a-button"
-          href={buttonHref}
-          target="_blank"
+          to={buttonHref}
           rel="noopener noreferrer"
           aria-label={`${buttonLabel} about ${title}`}
+          isNavLink={true}
         >
           {buttonLabel}
-        </a>
+        </Link>
         {pdfLink && <a className="rv-pdf-button">Download PDF</a>}
       </div>
       {details && <div className="rv-details"><Link href={details}>More Details</Link></div>}
