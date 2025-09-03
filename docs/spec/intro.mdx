@@ -25,7 +25,7 @@ import siteConfig from '@site/docusaurus.config';
 These are the current ratified versions of the ISA specifications. Previously published versions and the original ratification specifications for included extensions can be found on the [RISC-V Technical Specifications Archive page](https://lf-riscv.atlassian.net/wiki/spaces/HOME/pages/16154899/RISC-V+Technical+Specifications+Archive).
 
 <RvCardGrid>
-  <RvCard details={`${siteConfig.baseUrl}/details/isa-priv`} pdfLink='www.google.com' title='ISA Volume I - Unpriv' buttonLabel='View Spec' buttonHref={`${siteConfig.baseUrl}isa`}>
+  <RvCard details='/details/isa-priv' pdfLink='www.google.com' title='ISA Volume I - Unpriv' buttonLabel='View Spec' buttonHref={`${siteConfig.baseUrl}isa`}>
     <RvCardVersioning>
     <p>Version: 20250508</p>
     <p>Published: May 2025</p>
@@ -36,7 +36,7 @@ These are the current ratified versions of the ISA specifications. Previously pu
       <li>Ratified by the <a href='https://lists.riscv.org/g/tech-unprivileged'>Unprivileged Horizontal Committee</a></li>
     </ul>
   </RvCard>
-  <RvCard title='ISA Volume II - Priv' buttonLabel='Version: May 2024' buttonHref={`${siteConfig.baseUrl}isa`}>
+  <RvCard details='/details/isa-unpriv' title='ISA Volume II - Priv' buttonLabel='Version: May 2024' buttonHref={`${siteConfig.baseUrl}isa`}>
     <ul>
       <li>Privilaged Architecture</li>
       <li>Consectetur adipiscing elit quisque faucibus <a>ex sapien vitae</a></li>

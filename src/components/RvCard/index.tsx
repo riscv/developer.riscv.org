@@ -1,6 +1,7 @@
 import { JSX } from "react";
 import { RvPDFMenu, DownloadItem } from "./RvPdfMenu/index";
 import "./styles.scss";
+import Link from "@docusaurus/Link";
 
 interface RvCardProps {
   title: string;
@@ -44,7 +45,7 @@ export default function RvCard({
         </a>
         {pdfLink && <a className="rv-pdf-button">Download PDF</a>}
       </div>
-      {details && <div className="rv-details"><a href={details}>More Details</a></div>}
+      {details && <div className="rv-details"><Link href={details}>More Details</Link></div>}
     </div>
   );
 }
