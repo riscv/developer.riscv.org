@@ -22,31 +22,25 @@ import siteConfig from '@site/docusaurus.config';
 
 <div id='isa-spec'>
 ## RISC-V Instruction Set (ISA) Specifications
-These are the current ratified versions of the ISA specifications. Previously published versions and the original ratification specifications for included extensions can be found on the [RISC-V Technical Specifications Archive page](https://lf-riscv.atlassian.net/wiki/spaces/HOME/pages/16154899/RISC-V+Technical+Specifications+Archive).
+These are the current ratified versions of the ISA specifications. Previously published versions and the original ratification specifications can be found at More details for each volume.
 
 <RvCardGrid>
-  <RvCard details='/details/isa-priv' pdfLink='www.google.com' title='ISA Volume I - Unpriv' buttonLabel='View Spec' buttonHref={`${siteConfig.baseUrl}isa`}>
+  <RvCard details='/details/isa-priv' pdfLink='www.google.com' title='Volume I - Unprivileged Architecture' buttonLabel='View Spec' buttonHref={`${siteConfig.baseUrl}isa`}>
     <RvCardVersioning>
     <p>Version: 20250508</p>
     <p>Published: May 2025</p>
     </RvCardVersioning>
-    <ul>
-      <li>Lorem ipsum dolor sit amet consectetur <a>Unprivilaged Architecture</a></li>
-      <li>Consectetur adipiscing elit quisque faucibus</li>
-      <li>Ratified by the <a href='https://lists.riscv.org/g/tech-unprivileged'>Unprivileged Horizontal Committee</a></li>
-    </ul>
+    <p>Version: 20250508</p>
+    <p>Published: May 2025</p>
   </RvCard>
-  <RvCard details='/details/isa-unpriv' title='ISA Volume II - Priv' buttonLabel='Version: May 2024' buttonHref={`${siteConfig.baseUrl}isa`}>
-    <ul>
-      <li>Privilaged Architecture</li>
-      <li>Consectetur adipiscing elit quisque faucibus <a>ex sapien vitae</a></li>
-      <li>Ex sapien vitae pellentesque sem</li>
-    </ul>
+  <RvCard details='/details/isa-unpriv' title='Volume II: Privileged Architecture' buttonLabel='Version: May 2024' buttonHref={`${siteConfig.baseUrl}isa`}>
+    <p>Version: 20250508</p>
+    <p>Published: May 2025</p>
+  </RvCard>
+    <RvCard details='/details/isa-ratified' title='Ratified Extensions' buttonLabel='Extensions' buttonHref={`${siteConfig.baseUrl}isa`}>
+    <p>Find extensions that are ratified, but not included in the current, ratified specifications.</p>
   </RvCard>
 </RvCardGrid>
-:::note
-Extensions that are ratified, but not yet included in the full specifications, can be found on the [RISC-V Ratified Extensions](https://lf-riscv.atlassian.net/wiki/spaces/HOME/pages/16154732/Ratified+Extensions) page.
-:::
 </div>
 
 ---
