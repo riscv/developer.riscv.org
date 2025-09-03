@@ -30,6 +30,7 @@ import PDF from '@site/src/components/PDF';
 import RvCard from '../components/RvCard';
 import RvCardGrid from '../components/RvCardGrid';
 import RvCardVersioning from '../components/RvCardVersioning';
+import DetailsTable from '../components/DetailsTable';
 
 library.add(fab, fas);
 
@@ -55,5 +56,6 @@ export default {
     PDF,
     RvCard,
     RvCardGrid,
-    RvCardVersioning
+    RvCardVersioning,
+    DetailsTable
 };
