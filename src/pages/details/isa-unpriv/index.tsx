@@ -10,7 +10,7 @@ export default function ISAUnpriv() {
   return (
     <Layout>
       <main className="details-main">
-        <h1 className="details-title">ISA Unprivilaged Details View</h1>
+        <h1 className="details-title">ISA Unprivileged Details View</h1>
         <DetailsTable data={data} columns={columns} />
         <h2>ISA Ratified Specifications</h2>
         <p>
