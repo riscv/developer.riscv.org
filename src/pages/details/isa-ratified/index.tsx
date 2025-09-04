@@ -5,8 +5,10 @@ import DetailsTable from "@site/src/components/DetailsTable/index";
 export default function ISAPriv() {
   return (
     <Layout>
-      <h1>Isa Privilaged Details View</h1>
-      <DetailsTable data={data} columns={columns} />
+      <main className="details-main">
+        <h1 className="details-title">Isa Privilaged Details View</h1>
+        <DetailsTable data={data} columns={columns} />
+      </main>
     </Layout>
   );
 }

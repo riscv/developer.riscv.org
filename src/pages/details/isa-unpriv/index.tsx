@@ -9,15 +9,17 @@ export default function ISAUnpriv() {
   );
   return (
     <Layout>
-      <h1>ISA Unprivilaged Details View</h1>
-      <DetailsTable data={data} columns={columns} />
-      <h2>ISA Ratified Specifications</h2>
-      <p>
-        This section contains the specifications which were independently
-        ratified and subsequently have been pulled into the appropriate ISA
-        volumes published on the RISC-V Technical Specifications page.
-      </p>
-      <DetailsTable data={filteredData} columns={ratifiedColumns} />
+      <main className="details-main">
+        <h1 className="details-title">ISA Unprivilaged Details View</h1>
+        <DetailsTable data={data} columns={columns} />
+        <h2>ISA Ratified Specifications</h2>
+        <p>
+          This section contains the specifications which were independently
+          ratified and subsequently have been pulled into the appropriate ISA
+          volumes published on the RISC-V Technical Specifications page.
+        </p>
+        <DetailsTable data={filteredData} columns={ratifiedColumns} />
+      </main>
     </Layout>
   );
 }
