@@ -10,7 +10,7 @@ export default function ISAPriv() {
   return (
     <Layout>
       <main className="details-main">
-        <h1 className="details-title">Isa Privilaged Details View</h1>
+        <h1 className="details-title">Isa Privileged Details View</h1>
         <DetailsTable data={data} columns={columns} />
         <h2>ISA Ratified Specifications</h2>
         <p>
