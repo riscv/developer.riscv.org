@@ -10,13 +10,19 @@ export default function ISAPriv() {
   return (
     <Layout>
       <main className="details-main">
-        <h1 className="details-title">Isa Privileged Details View</h1>
+        <h1 className="details-title">ISA Privileged Details</h1>
         <DetailsTable data={data} columns={columns} />
         <h2>ISA Ratified Specifications</h2>
+
         <p>
-          This section contains the specifications which were independently
+          This section contains the specifications that were independently
           ratified and subsequently have been pulled into the appropriate ISA
           volumes published on the RISC-V Technical Specifications page.
+        </p>
+
+        <h2>ISA Ratified Specifications Archive</h2>
+        <p>
+       This page contains the list of all archived ratified technical specification version.
         </p>
         <DetailsTable data={filteredData} columns={ratifiedColumns} />
       </main>

@@ -1,303 +1,290 @@
 [
   {
+    "name": "PTE Reserved-for-Software Bits 60-59",
+    "date": "August 2025",
+    "extensions": "Svrsw60t59b",
+    "committee": "priv"
+  },
+  {
     "name": "Load/Store Pair for RV32 (Zilsd & Zclsd)",
     "date": "February 2025",
     "extensions": "Zilsd, Zclsd",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1oMMxKJSuNKNcjiZdJEPeUqOCxr8VcxCn/view?usp=drive_link"
+    "committee": "unpriv"
+  },
+  {
+    "name": "The RISC-V Debug Specification",
+    "date": "February 2025",
+    "extensions": "Sdext, Sdtrig",
+    "committee": "priv"
   },
   {
     "name": "RISC-V Control Transfer Records",
     "date": "November 2024",
     "extensions": "Smctr, Ssctr",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/17P5RMSU3Ta-8sTdwr5dr-UyVEn13HWWN/view?usp=sharing"
+    "committee": "priv"
   },
   {
     "name": "RISC-V Pointer Masking",
     "date": "October 2024",
     "extensions": "Smmpm, Smnpm, Ssnpm, Supm, Sspm",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/159QffOTbi3EEbdkKndYRZ2c46D25ZLmO/view?usp=drive_link"
+    "committee": "priv"
   },
   {
     "name": "The RISC-V Instruction Set Manual Volume II: Privileged Architecture",
     "date": "October 2024",
     "extensions": "Sm1p13, Ss1p13",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1GGwOGJvyV59g1YOko6ut__dVlKTCVthJ/view?usp=drive_link"
+    "committee": "priv"
   },
   {
     "name": "Double Trap",
     "date": "August 2024",
     "extensions": "Ssdbltrp, Smdbltrp",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1e5-3pUdh_UcVmKlwxO6KBNVHivMXGdOf/view?usp=drive_link"
+    "committee": "priv"
   },
   {
     "name": "RISC-V Quality-of-Service (QoS) Identifiers",
     "date": "June 2024",
     "extensions": "Ssqosid",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1KO5iHq1g7dW3L6logUtY0vgTfQFBlg4V/view?usp=drive_link"
+    "committee": "priv"
   },
   {
     "name": "Obviating Memory-Management Instructions after Marking PTEs Valid",
     "date": "June 2024",
     "extensions": "Svvptc",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1D1ZvAvSigDkazmRdpVE35IiPQpyj3J8D/view?usp=drive_link"
+    "committee": "priv"
   },
   {
     "name": "Resumable Non-Maskable Interrupts",
     "date": "June 2024",
     "extensions": "Smrnmi",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1tNQPe6kXFgI9FYmsn94G7X4zAA6cZGEo/view?usp=drive_link"
+    "committee": "priv"
   },
   {
     "name": "Shadow Stacks and Landing Pads",
     "date": "June 2024",
     "extensions": "Zicfiss, Zicfilp",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1k8zkQAlfe8hjjqk3903N9tig5YId1-7S/view?usp=drive_link"
+    "committee": "unpriv"
   },
   {
     "name": "BF16 Extensions",
     "date": "June 2024",
     "extensions": "Zfbfmin, Zvfbfmin, Zvfbfwma",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1iwlVykLz2TuYsGLnMgNwGk4W58vdGBmc/view?usp=drive_link"
+    "committee": "unpriv"
   },
   {
     "name": "Zaamo and Zalrsc Extensions",
     "date": "April 2024",
     "extensions": "Zaamo, Zalrsc",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1y2jMvCgnlPhFIe_MKv6NvSzxS-Jduz76/view?usp=drive_link"
+    "committee": "unpriv"
   },
   {
     "name": "B Standard Extension for Bit Manipulation Instructions",
     "date": "April 2024",
     "extensions": "B",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1SgLoasaBjs5WboQMaU3wpHkjUwV71UZn/view?usp=drive_link"
+    "committee": "unpriv"
   },
   {
     "name": "Byte and Halfword Atomic Memory Operations (Zabha)",
     "date": "April 2024",
     "extensions": "Zabha",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1OnM4q3BnAJ_HuGfuzVB7CSpbqZ5OVH8s/view?usp=drive_link"
+    "committee": "unpriv"
   },
   {
     "name": "RISC-V Supervisor Counter Delegation",
     "date": "March 2024",
     "extensions": "Smcdeleg, Ssccfg",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1qFcNKToo8E2jjkubXi_70SclHuEzba5N/view?usp=drive_link"
+    "committee": "priv"
   },
   {
     "name": "May-Be-Operations",
     "date": "March 2024",
     "extensions": "Zimop, Zcmop",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/17CxX1Fj6BpJH47AIk_hZo64wcj5LTjIk/view?usp=drive_link"
+    "committee": "unpriv"
   },
   {
     "name": "RISC-V Indirect CSR Access (Smcsrind/Sscsrind)",
     "date": "February 2024",
     "extensions": "Smcsrind, Sscsrind",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/17MxYRvoOiQqtdfSCPw_SskJtXVEbi1jR/view?usp=drive_link"
+    "committee": "priv"
   },
   {
     "name": "RISC-V Integer Conditional (Zicond) operations extension",
     "date": "November 2023",
     "extensions": "Zicond",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1ssWUkvSp_CCw6riw3ThSwJFKn4GH5QLM/view?usp=drive_link"
+    "committee": "unpriv"
   },
   {
     "name": "Hardware Updating of PTE A/D Bits (Svadu)",
     "date": "November 2023",
     "extensions": "Svadu",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1-5kz8_9zg8wYcY-zyLdyBp8j12PuxmlG/view?usp=drive_link"
+    "committee": "priv"
   },
   {
     "name": "RISC-V Cycle and Instret Privilege Mode Filtering (Smcntrpmf)",
     "date": "November 2023",
     "extensions": "Smcntrpmf",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1T33-7wnEo8Lar3n0k33ejW7_cROt0H0k/view?usp=drive_link"
+    "committee": "priv"
   },
   {
     "name": "Atomic Compare-and-Swap (CAS) Instructions (Zacas)",
     "date": "November 2023",
     "extensions": "Zacas",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1Bjfkepuh3m0V2EUqoUeGWQWfzJi9lpAp/view?usp=drive_link"
+    "committee": "unpriv"
   },
   {
     "name": "RISC-V Cryptography Extensions Volume II: Vector Instructions",
     "date": "September 2023",
     "extensions": "Zvbb, Zvbc, Zvkb, Zvkg, Zvkn, Zvknc, Zvkned, Zvkng, Zvknha, Zvknhb, Zvks, Zvksc, Zvksed, Zvksg, Zvksh, Zvkt",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1gb9OLH-DhbCgWp7VwpPOVrrY6f3oSJLL/view?usp=sharing"
+    "committee": "unpriv"
   },
   {
     "name": "\"Zfa\" Standard Extension for Additional Floating-Point Instructions",
     "date": "September 2023",
     "extensions": "Zfa",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1VT6QIggpb59-8QRV266dEE4T8FZTxGq4/view?usp=sharing"
+    "committee": "unpriv"
   },
   {
     "name": "RISC-V Advanced Interrupt Architecture",
     "date": "June 2023",
     "extensions": "Smaia, Ssaia",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/16life2Y5u7Plebbl4v1fFM1-NK-KHw0Y/view?usp=sharing"
+    "committee": "priv"
   },
   {
-    "name": "“Zvfh/Zvfhmin:” Vector Extension for Half-Precision Floating-Point Arithmetic/Vector Extension for Minimal Half-Precision Floating-Point Arithmetic",
+    "name": ""Zvfh/Zvfhmin:" Vector Extension for Half-Precision Floating-Point Arithmetic/Vector Extension for Minimal Half-Precision Floating-Point Arithmetic",
     "date": "June 2023",
     "extensions": "Zvfh, Zvfhmin",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1_Yt60HGAf1r1hx7JnsIptw0sqkBd9BQ8/view?usp=drive_link"
+    "committee": "unpriv"
   },
   {
-    "name": "“Zihintntl” Non-Temporal Locality Hints",
+    "name": ""Zihintntl" Non-Temporal Locality Hints",
     "date": "May 2023",
     "extensions": "Zihintntl",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/13_wsN8YmRfH8YWysFyTX-DjTkCnBd9hj/view?usp=share_link"
+    "committee": "unpriv"
   },
   {
     "name": "RISC-V Code Size Reduction",
     "date": "April 2023",
     "extensions": "Zca, Zcb, Zcd, Zce, Zcf, Zcmp, Zcmt",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1zmWDmfbtVY9I6hn0vuLTbk5rsSPc44sL/view?usp=drive_link"
+    "committee": "unpriv"
+  },
+  {
+    "name": "RISC-V Profiles",
+    "date": "March 2023",
+    "extensions": "RVA20, RVI20, RVA22",
+    "committee": undefined
   },
   {
     "name": "\"Zicntr\" and \"Zihpm\" Counters",
     "date": "March 2023",
     "extensions": "Zicntr, Zihpm",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1qa57pePesOiDOrNzxuuGFhCL4Rbi9AYB/view?usp=share_link"
+    "committee": "unpriv"
   },
   {
     "name": "RV32E and RV64E Base Integer Instruction Sets",
     "date": "January 2023",
     "extensions": "RV32E/RV64E",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1GjHmphVKvJlOBJydAt36g0Oc8yCOPtKw/view?usp=share_link"
+    "committee": undefined
   },
   {
-    "name": "“Ztso” Standard Extension for Total Store Ordering",
+    "name": ""Ztso" Standard Extension for Total Store Ordering",
     "date": "January 2023",
     "extensions": "Ztso",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/173BGJQLqtEzAAD5lV9uaLMMjS91WeAt7/view?usp=share_link"
+    "committee": "unpriv"
   },
   {
     "name": "RISC-V Wait-on-Reservation-Set (Zawrs) extension",
     "date": "November 2022",
     "extensions": "Zawrs",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1wKk4dC_at8bFJRUwLR84fV3i1X9jwtAe/view?usp=drive_link"
+    "committee": "unpriv"
   },
   {
     "name": "Zmmul Extension",
     "date": "June 2022",
     "extensions": "Zmmul",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1v-mI2hikzI4swl0KNYPQ82VkTRt9uOPg/"
+    "committee": "unpriv"
   },
   {
     "name": "PMP Enhancements for memory access and execution prevention on Machine mode (Smepmp)",
     "date": "November 2021",
     "extensions": "Smepmp",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1karAdJDKYReW-TtOygh0JD5r65Pygx0e/view?usp=drive_link"
-  },
-  {
-    "name": "RISC-V Privileged Architecture 1.12",
-    "date": "November 2021",
-    "extensions": "Sm1p12, Ss1p12, Sv57, Hypervisor, Svinval, Svnapot, Svpbmt",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1EMip5dZlnypTk7pt4WWUKmtjUKTOkBqh/view?usp=drive_link"
+    "committee": "priv"
   },
   {
     "name": "RISC-V Base Cache Management Operation ISA Extensions",
     "date": "November 2021",
     "extensions": "Zicbom, Zicbop, Zicboz",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1jfzhNAk7viz4t2FLDZ5z4roA0LBggkfZ/view?usp=drive_link"
+    "committee": "unpriv"
   },
   {
     "name": "RISC-V Bit-Manipulation ISA-extensions",
     "date": "November 2021",
     "extensions": "Zba, Zbb, Zbc, Zbs",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/11-dKxnp7yfl9L3HESXGCtYl90dFKGTzE/view?usp=drive_link"
+    "committee": "unpriv"
   },
   {
     "name": "RISC-V Count Overflow and Mode-Based Filtering Extension",
     "date": "November 2021",
     "extensions": "Sscofpmf",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1RiAIOVoN1E7bv6_kEzcgATkhbeUdqu5t/view?usp=drive_link"
+    "committee": "priv"
   },
   {
     "name": "RISC-V Cryptography Extensions Volume I: Scalar & Entropy Source Instructions",
     "date": "November 2021",
     "extensions": "Zbkb, Zbkc, Zbkx, Zknd, Zkne, Zknh, Zksed, Zksh, Zkn, Zks, Zkt, Zk, Zkr",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1Thd010Eh2DqnhDHpDd3SM7Ame7KENkPw/view?usp=drive_link"
+    "committee": "unpriv"
   },
   {
     "name": "RISC-V State Enable Extension",
     "date": "November 2021",
     "extensions": "Smstateen",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1dhI6OzVbejQbfwyBTuwK9U4VUmW8ii4o/view?usp=drive_link"
+    "committee": "priv"
   },
   {
     "name": "RISC-V \"stimecmp / vstimecmp\" Extension",
     "date": "November 2021",
     "extensions": "Sstc",
-    "community": "Privileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1O0ogDHijAc7gM58Byb0BRqIRGYsdOt2D/view?usp=drive_link"
+    "committee": "priv"
   },
   {
     "name": "RISC-V Vector Extension",
     "date": "November 2021",
     "extensions": "Zve32x, Zve32f, Zve64x, Zve64f, Zve64d, Zve, Zvl32b, Zvl64b, Zvl128b, Zvl256b, Zvl512b, Zvl1024b, Zvl, Zv",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1AQZ3l_EGeMa2NftMO562gVZ4vj61od2H/view?usp=drive_link"
+    "committee": "unpriv"
+  },
+  {
+    "name": "The RISC-V Instruction Set Manual Volume II: Privileged Architecture",
+    "date": "November 2021",
+    "extensions": "Sm1p12, Ss1p12, Sv57, Hypervisor, Svinval, Svnapot, Svpbmt",
+    "committee": "priv"
   },
   {
     "name": "\"Zfh\" and \"Zfhmin\" Standard Extensions for Half-Precision Floating-Point",
     "date": "November 2021",
     "extensions": "Zfh, Zfhmin",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1z3tQQLm5ALsAD77PM0l0CHnapxWCeVzP/view?usp=sharing"
+    "committee": "unpriv"
   },
   {
     "name": "\"Zfinx\", \"Zdinx\", \"Zhinx\", \"Zhinxmin\": Standard Extensions for Floating-Point in Integer Registers",
     "date": "November 2021",
     "extensions": "Zfinx, Zdinx, Zhinx, Zhinxmin",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/13nlRJq-kfAlKGKC7G_NR2RaJi3N2Xb6z/view?usp=drive_link"
+    "committee": "unpriv"
   },
   {
-    "name": "“Zihintpause” Pause Hint",
+    "name": ""Zihintpause" Pause Hint",
     "date": "February 2021",
     "extensions": "Zihintpause",
-    "community": "Unprivileged Horizontal Committee",
-    "pdfLink": "https://drive.google.com/file/d/1WXT3TXZs0pwS9BgPoDesJQ61_0GVSQpZ/view?usp=drive_link"
+    "committee": "unpriv"
+  },
+  {
+    "name": "The RISC-V Instruction Set Manual Volume I: Unprivileged ISA",
+    "date": "December 2019",
+    "extensions": "A, D, F, RV32I, RV64I, Zaamo, Zalrsc, Zicsr, Zifencei",
+    "committee": "unpriv"
+  },
+  {
+    "name": "The RISC-V Instruction Set Manual Volume II: Privileged Architecture",
+    "date": "December 2019",
+    "extensions": "C, M, Q, Sm1p11, Ss1p11, Sv32, Sv39, Sv48",
+    "committee": "priv"
   }
 ]

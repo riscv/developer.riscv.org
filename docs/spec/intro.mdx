@@ -25,21 +25,18 @@ import siteConfig from '@site/docusaurus.config';
 These are the current ratified versions of the ISA specifications. Previously published versions and the original ratification specifications can be found at More details for each volume.
 
 <RvCardGrid>
-  <RvCard details='/details/isa-unpriv' pdfLink='www.google.com' title='Volume I - Unprivileged Architecture' buttonLabel='View Spec' buttonHref="pathname:///docs/reference/isa/unpriv/intro.html">
+  <RvCardV2 details='/details/isa-unpriv' pdfLink='www.google.com' title='Volume I - Unprivileged Architecture' buttonLabel='View' buttonHref="pathname:///docs/reference/isa/unpriv/unpriv-index.html">
     <RvCardVersioning>
     <p>Version: 20250508</p>
     <p>Published: May 2025</p>
     </RvCardVersioning>
+  </RvCardV2>
+  <RvCardV2 details='/details/isa-priv' pdfLink='www.google.com' title='Volume II: Privileged Architecture' buttonLabel='View' buttonHref="pathname:///docs/reference/isa/priv/priv-index.html">
+    <RvCardVersioning>
     <p>Version: 20250508</p>
     <p>Published: May 2025</p>
-  </RvCard>
-  <RvCard details='/details/isa-priv' title='Volume II: Privileged Architecture' buttonLabel='Version: May 2024' buttonHref="pathname:///docs/reference/isa/priv/priv-intro.html">
-    <p>Version: 20250508</p>
-    <p>Published: May 2025</p>
-  </RvCard>
-    <RvCard details='/details/isa-ratified' title='Ratified Extensions' buttonLabel='Extensions' buttonHref={`${siteConfig.baseUrl}isa`}>
-    <p>Find extensions that are ratified, but not included in the current, ratified specifications.</p>
-  </RvCard>
+    </RvCardVersioning>
+  </RvCardV2>
 </RvCardGrid>
 </div>
 
@@ -50,21 +47,21 @@ These are the current ratified versions of the ISA specifications. Previously pu
 These are the current, published versions of the Profiles specifications.
 
 <RvCardGrid>
-  <RvCardV2 pdfLink='www.google.com' title='RVA23 Profile' buttonLabel='Version: October 2024' buttonHref={`${siteConfig.baseUrl}docs/spec/profiles/rva23`}>
+  <RvCardV2 pdfLink='www.google.com' title='RVA23 Profile' buttonLabel='View' buttonHref={`${siteConfig.baseUrl}docs/spec/profiles/rva23`}>
     <RvCardVersioning>
        <p>Version: 20250508</p>
        <p>Published: May 2025</p>
     </RvCardVersioning>
-    <p>Focused on Servers and application class processors.</p>
+    <p>Profile for Servers and application class processors.</p>
   </RvCardV2>
-  <RvCardV2 pdfLink='www.google.com' title='RVB23 Profile' buttonLabel='Version: October 2024' buttonHref={`${siteConfig.baseUrl}docs/spec/profiles/rvb23`}>
+  <RvCardV2 pdfLink='www.google.com' title='RVB23 Profile' buttonLabel='View' buttonHref={`${siteConfig.baseUrl}docs/spec/profiles/rvb23`}>
     <RvCardVersioning>
        <p>Version: 20250508</p>
        <p>Published: May 2025</p>
     </RvCardVersioning>
-    <p>Focused on Edge embedded Devices.</p>
+    <p>Profile for Edge embedded Devices.</p>
   </RvCardV2>
-  <RvCardV2 title='RISC-V Profiles' buttonLabel='Version: March 2023' buttonHref={`${siteConfig.baseUrl}docs/spec/profiles/riscv-profiles`}>
+  <RvCardV2 title='RISC-V Profiles' buttonLabel='View' buttonHref={`${siteConfig.baseUrl}docs/spec/profiles/riscv-profiles`}>
     <RvCardVersioning>
        <p>Version: 20250508</p>
        <p>Published: May 2025</p>
