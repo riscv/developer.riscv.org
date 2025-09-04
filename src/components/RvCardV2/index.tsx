@@ -42,7 +42,7 @@ export default function RvCard({
         >
           {buttonLabel}
         </Link>
-        {pdfLink && <a className="rv-pdf-button">Download PDF</a>}
+        {pdfLink && <a className="rv-pdf-button">Download</a>}
       </div>
       {details && <div className="rv-details"><Link href={details}>More Details</Link></div>}
     </div>
