@@ -150,13 +150,13 @@
     "committee": "priv"
   },
   {
-    "name": ""Zvfh/Zvfhmin:" Vector Extension for Half-Precision Floating-Point Arithmetic/Vector Extension for Minimal Half-Precision Floating-Point Arithmetic",
+    "name": "\"Zvfh/Zvfhmin:\" Vector Extension for Half-Precision Floating-Point Arithmetic/Vector Extension for Minimal Half-Precision Floating-Point Arithmetic",
     "date": "June 2023",
     "extensions": "Zvfh, Zvfhmin",
     "committee": "unpriv"
   },
   {
-    "name": ""Zihintntl" Non-Temporal Locality Hints",
+    "name": "\"Zihintntl\" Non-Temporal Locality Hints",
     "date": "May 2023",
     "extensions": "Zihintntl",
     "committee": "unpriv"
@@ -171,7 +171,7 @@
     "name": "RISC-V Profiles",
     "date": "March 2023",
     "extensions": "RVA20, RVI20, RVA22",
-    "committee": undefined
+    "committee": "unpriv"
   },
   {
     "name": "\"Zicntr\" and \"Zihpm\" Counters",
@@ -183,10 +183,10 @@
     "name": "RV32E and RV64E Base Integer Instruction Sets",
     "date": "January 2023",
     "extensions": "RV32E/RV64E",
-    "committee": undefined
+    "committee": "unpriv"
   },
   {
-    "name": ""Ztso" Standard Extension for Total Store Ordering",
+    "name": "\"Ztso\" Standard Extension for Total Store Ordering",
     "date": "January 2023",
     "extensions": "Ztso",
     "committee": "unpriv"
@@ -270,7 +270,7 @@
     "committee": "unpriv"
   },
   {
-    "name": ""Zihintpause" Pause Hint",
+    "name": "\"Zihintpause\" Pause Hint",
     "date": "February 2021",
     "extensions": "Zihintpause",
     "committee": "unpriv"
