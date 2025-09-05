@@ -26,15 +26,15 @@ export const ratifiedColumns = [
     key: "name",
     label: "Specification Name",
   },
-  { key: "date", label: "Ratified" },
+  { key: "date", label: "Date Ratified" },
   { key: "extensions", label: "Extensions" },
-  {
-    key: "pdfLink",
-    label: "PDF",
-    render: (val) => (
-      <a href={val} target="_blank" rel="noopener noreferrer">
-        View
-      </a>
-    ),
-  },
+  // {
+  //   key: "pdfLink",
+  //   label: "PDF",
+  //   render: (val) => (
+  //     <a href={val} target="_blank" rel="noopener noreferrer">
+  //       View
+  //     </a>
+  //   ),
+  // },
 ];
