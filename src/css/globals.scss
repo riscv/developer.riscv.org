@@ -1,0 +1,138 @@
+@use "sass:map";
+/* ---------------------------------------------------
+   Variables
+   --------------------------------------------------- */
+:root {
+  /* Typography */
+  --font-sans: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ---------------------------------------------------
+   SCSS Maps
+   --------------------------------------------------- */
+
+// Brand colors
+$primary: #003262; // Berkeley Blue
+$accent: #fdb515; // California Gold
+$primary-dark: #011e41;
+$accent-light: #fdda64;
+
+// Secondary (saturated / vivid)
+$colors-saturated: (
+  "teal": #0a6b7c,
+  "pink": #cb007b,
+  "purple": #60269e,
+);
+
+// Secondary (desaturated / lighter)
+$colors-desaturated: (
+  "teal": #62cbc9,
+  "pink": #fe9bb1,
+  "purple": #c2a6e1,
+);
+
+// Neutral grays
+$colors-neutral: (
+  "gray-900": #444444,
+  "gray-700": #666666,
+  "gray-400": #999999,
+);
+
+/* ---------------------------------------------------
+   Light & Dark Mode Definitions
+   --------------------------------------------------- */
+
+// Default light mode
+:root {
+  --color-bg: #ffffff;
+  --color-text: #222222;
+  --color-link: #2f00ff;
+  --color-link-hover: #fdb515;
+  --color-border: #30363d;
+  --color-menu-item: #666666;
+}
+
+// Dark mode
+[data-theme="dark"] {
+  --color-bg: #0d1117;
+  --color-text: #f0f6fc;
+  --color-link: #2f00ff;
+  --color-link-hover: #fdb515;
+  --color-border: #e5e7eb;
+  --color-menu-item: #999999;
+}
+
+/* ---------------------------------------------------
+   Base Styles
+   --------------------------------------------------- */
+html {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--color-link-hover);
+  }
+}
+
+/**
+This is stuff from the old custom.css file. Merge into this for compatibility
+and organization sake. 
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #003262;
+  --ifm-color-primary-dark: #003262;
+  --ifm-color-primary-darker: #011e41;
+  --ifm-color-primary-darkest: #011e41;
+  --ifm-color-primary-light: #fdb515;
+  --ifm-color-primary-lighter: #fdda64;
+  --ifm-color-primary-lightest: #fdda64;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #fdb515;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #62cbc9;
+  --ifm-color-primary-lighter: #62cbc9;
+  --ifm-color-primary-lightest: #62cbc9;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  min-height: 200px;
+}

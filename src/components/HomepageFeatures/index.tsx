@@ -8,6 +8,8 @@ type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
+  button: string;
+  link: string;
 };
 
 const FeatureList: FeatureItem[] = [

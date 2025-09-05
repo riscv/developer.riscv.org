@@ -1,0 +1,19 @@
+@use "./globals.scss" as *;
+
+.rv-navbar {
+  background-color: $accent;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 0;
+  font-size: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: auto;
+  width: 100%;
+  padding: 20px 20px;
+  a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+  }
+}

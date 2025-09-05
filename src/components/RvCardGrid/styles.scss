@@ -1,0 +1,30 @@
+.rv-card-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+  max-width: 100%;
+  margin: 0 auto; 
+  align-items: stretch;
+
+  > * {
+    flex: 1 1 0; 
+    max-width: 20rem;
+    min-width: 20rem;
+    height: auto;
+  }
+
+  @media (max-width: 1024px) {
+    > * {
+      flex: 1 1 18rem; /* slightly smaller cards on medium screens */
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* stack vertically */
+
+    > * {
+      flex: 1 1 100%;
+      max-width: 100%; /* make each card full-width */
+    }
+  }
+}
