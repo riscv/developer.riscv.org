@@ -12,12 +12,14 @@ export default function ISAPriv() {
       <main className="details-main">
         <h1 className="details-title">ISA Privileged Details</h1>
 
-      <h2>ISA Ratified Specifications</h2>
+      <p>The RISC-V ISA Privileged Specification is a collection of all of the ratified, published privileged extensions for RISC-V.</p>
 
+<p>The ISA Privileged Specification is developed by the [RISC-V Privileged Horizontal Committee](https://lists.riscv.org/g/tech-privileged).</p>
+
+<h2>ISA Ratified Specifications</h2>
         <p>
           This section contains the specifications that were independently
-          ratified and subsequently have been pulled into the appropriate ISA
-          volumes published on the RISC-V Technical Specifications page.
+          ratified and subsequently have been pulled into the RISC-V ISA Privileged Specification documentation.
         </p>
         <DetailsTable data={data} columns={columns} />
 
