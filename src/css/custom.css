@@ -42,3 +42,10 @@ display: none !important;
 .card {
   min-height: 200px;
 }
+
+.details-main {
+    margin: 1rem 5%;
+}
+.details-title {
+    margin-bottom: 2rem;
+}
