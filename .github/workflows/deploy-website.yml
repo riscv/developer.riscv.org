@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   deploy:
-    concurrency: ci-${{ github.ref }} 
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
 
     strategy:
@@ -41,9 +41,9 @@ jobs:
     - name: Build Antora
       continue-on-error: true
       run: |
-        cd antora 
-        npx antora antora-playbook.yml --stacktrace
-    
+        cd antora
+        npx antora --fetch antora-playbook.yml --stacktrace
+
     - name: Build Docusaurus
       # continue-on-error: true
       run: yarn build
