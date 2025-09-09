@@ -1,15 +1,15 @@
 export const columns = [
   { key: "version", label: "Version" },
   { key: "publishDate", label: "Publish Date", sortable: true },
-  {
-    key: "pdfLink",
-    label: "PDF",
-    render: (val) => (
-      <a href={val} target="_blank" rel="noopener noreferrer">
-        Download
-      </a>
-    ),
-  },
+  // {
+  //   key: "pdfLink",
+  //   label: "PDF",
+  //   render: (val) => (
+  //     <a href={val} target="_blank" rel="noopener noreferrer">
+  //       Download
+  //     </a>
+  //   ),
+  // },
 ];
 
 export const data = [

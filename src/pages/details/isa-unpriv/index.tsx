@@ -4,9 +4,7 @@ import DetailsTable from "@site/src/components/DetailsTable";
 import RatifiedData from "../../_ratified_data.json";
 
 export default function ISAUnpriv() {
-  const filteredData = RatifiedData.filter(
-    (d) => d.committee === "unpriv"
-  );
+  const filteredData = RatifiedData.filter((d) => d.committee === "unpriv");
   return (
     <Layout>
       <main className="details-main">
@@ -17,9 +15,11 @@ export default function ISAUnpriv() {
         </p>
 
         <p>
-          The ISA Unprivileged Specification is developed by the [RISC-V
-          Unprivileged Horizontal
-          Committee](https://lists.riscv.org/g/tech-unprivileged).
+          The ISA Unprivileged Specification is developed by the{" "}
+          <a href="https://lists.riscv.org/g/tech-unprivileged">
+            RISC-V Unprivileged Horizontal Committee
+          </a>
+          .
         </p>
 
         <DetailsTable data={data} columns={columns} />
