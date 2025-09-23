@@ -1,0 +1,46 @@
+image: node:10.14.2-stretch
+stages: [pages, trigger]
+
+build_pages:          # Create updated documentation with Antora when changes were made to main branch or the pipeline was triggered externally.
+  stage: pages
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_PIPELINE_SOURCE == "trigger"
+    - if: $CI_PIPELINE_SOURCE == "pipeline"
+  tags:
+    -  asciidoc
+  image:
+    name: ghcr.io/asam-ev/project-guide-docker:4
+    entrypoint: [""]
+  script:
+    - antora --stacktrace --fetch --clean site.yml
+  artifacts:
+    paths:
+      - public/
+
+pages:                # Upload new documentation to pages.
+  stage: pages
+  image: busybox
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_PIPELINE_SOURCE == "trigger"
+    - if: $CI_PIPELINE_SOURCE == "pipeline"
+  tags:
+    - asciidoc
+  script:
+    - echo "The site will be deployed to $CI_PAGES_URL"
+  artifacts:
+    paths:
+    - public
+  needs:
+    - job: build_pages
+      artifacts: true
+
+trigger_ui:       # Trigger the ui repo to update their documentation. Only run when triggered by a push to the default branch to prevent circularly triggered pipeline runs!
+  stage: trigger
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  trigger:
+    project: common/antora-ui
+    branch: main
+  

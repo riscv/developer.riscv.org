@@ -1,0 +1,65 @@
+= ASAM Bibliography
+As of now, Antora does not support bibliographies out of the box.
+The Asciidoctor features and extensions do not work for JavaScript and distributed content.
+Rather, they are typically written in Ruby and expect all content to be in one output file (which is not the case with Antora).
+
+To solve this, ASAM has implemented a custom extension for Antora to support bibtex files and bibtex-style references.
+
+== Configuration
+To enable the bibliography feature in general, add the following configuration to the extension attributes:
+
+[source, YAML]
+----
+bibliography: true
+----
+
+.Configuration example
+====
+[source,YAML]
+----
+antora:
+  extensions:
+  - require: './asam-antora-extensions/asam-antora_extension.js'
+    bibliography: true
+----
+====
+
+To enable the bibliography within a component, add the following configuration to respective antora.yml file:
+
+[source, YAML]
+----
+asamBibliography: "module:path/to/file.bib"
+----
+
+.Configuration for a component where the bibliography file with the name "asambib.bib" is located in the module "standard" and the folder "bibliography"
+====
+[source,YAML]
+----
+asciidoc:
+  attributes:
+    asamBibliography: 'ROOT:bibliography/asambib.bib'
+----
+====
+
+To choose a different citation style or language, you can set the following parameters in either the site.yml (for the whole extension) or each relevant antora.yml (as asciidoc attribute for this component-version):
+
+[source, YAML]
+----
+bibtex-style: <name of the csl file without extension (.csl)>
+bibtex-locale: <valid language tag>
+----
+
+== Notes
+All entries get an anchor with the following syntax: `bib-<entry-id>`, where `<entry-id>` is the id of the bibliography entry. +
+The default style is `iso690-numeric-brackets-cs`, the default locale is `en`.
+
+Those defaults are set in the `asam-antora_extensions.js`.
+The default values of the bibliography extension itself may differ!
+
+== How it works
+The extension first finds the listed bibliography file (.bib) and parses its content.
+Once Antora has classified all files, it first identifies the (first) page for each component-version combination where the `bibliography::[]` macro is called. +
+It then sorts the pages and replaces each cite:[] macro with a link to the relevant bibliography page and the entry there, using the entry-id as input for the anchor, if the id was found in the bibliography file.
+
+After all citations have been replaced, the extension creates the bibliography page, replacing the `bibliography::[]` call in its body with a formatted string containing all cited sources in the order defined by the chosen style.
+If the chosen style does not provide a bibliography function, the bibliography page is removed completely from the Antora output (including its entry in the navigation).

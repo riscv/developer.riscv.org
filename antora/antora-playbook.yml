@@ -4,7 +4,7 @@ site:
   keys:
     google_analytics: 'GTM-NXLCGZF4'
 
-    
+
 
 output:
   dir: ./build/docs/reference
@@ -85,7 +85,7 @@ asciidoc:
     multiple_pdfs: false
     pdf_list: ~
 
-# Temp disable for local build speedup. Re-enable for deployment. 
+# Temp disable for local build speedup. Re-enable for deployment.
 runtime:
   fetch: true
 
@@ -95,6 +95,8 @@ antora:
     index_latest_only: true
 #     - '@antora/pdf-extension'
 #     - '@antora/asciidoctor-bibtex'
+#     - './asam-antora-extensions-main/asam-antora_extension.js
+#   bibliography: true
 
 ui:
   bundle:
