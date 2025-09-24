@@ -1,0 +1,290 @@
+[
+  {
+    "name": "PTE Reserved-for-Software Bits 60-59",
+    "date": "August 2025",
+    "extensions": "Svrsw60t59b",
+    "committee": "priv"
+  },
+  {
+    "name": "Load/Store Pair for RV32 (Zilsd & Zclsd)",
+    "date": "February 2025",
+    "extensions": "Zilsd, Zclsd",
+    "committee": "unpriv"
+  },
+  {
+    "name": "The RISC-V Debug Specification",
+    "date": "February 2025",
+    "extensions": "Sdext, Sdtrig",
+    "committee": "priv"
+  },
+  {
+    "name": "RISC-V Control Transfer Records",
+    "date": "November 2024",
+    "extensions": "Smctr, Ssctr",
+    "committee": "priv"
+  },
+  {
+    "name": "RISC-V Pointer Masking",
+    "date": "October 2024",
+    "extensions": "Smmpm, Smnpm, Ssnpm, Supm, Sspm",
+    "committee": "priv"
+  },
+  {
+    "name": "The RISC-V Instruction Set Manual Volume II: Privileged Architecture",
+    "date": "October 2024",
+    "extensions": "Sm1p13, Ss1p13",
+    "committee": "priv"
+  },
+  {
+    "name": "Double Trap",
+    "date": "August 2024",
+    "extensions": "Ssdbltrp, Smdbltrp",
+    "committee": "priv"
+  },
+  {
+    "name": "RISC-V Quality-of-Service (QoS) Identifiers",
+    "date": "June 2024",
+    "extensions": "Ssqosid",
+    "committee": "priv"
+  },
+  {
+    "name": "Obviating Memory-Management Instructions after Marking PTEs Valid",
+    "date": "June 2024",
+    "extensions": "Svvptc",
+    "committee": "priv"
+  },
+  {
+    "name": "Resumable Non-Maskable Interrupts",
+    "date": "June 2024",
+    "extensions": "Smrnmi",
+    "committee": "priv"
+  },
+  {
+    "name": "Shadow Stacks and Landing Pads",
+    "date": "June 2024",
+    "extensions": "Zicfiss, Zicfilp",
+    "committee": "unpriv"
+  },
+  {
+    "name": "BF16 Extensions",
+    "date": "June 2024",
+    "extensions": "Zfbfmin, Zvfbfmin, Zvfbfwma",
+    "committee": "unpriv"
+  },
+  {
+    "name": "Zaamo and Zalrsc Extensions",
+    "date": "April 2024",
+    "extensions": "Zaamo, Zalrsc",
+    "committee": "unpriv"
+  },
+  {
+    "name": "B Standard Extension for Bit Manipulation Instructions",
+    "date": "April 2024",
+    "extensions": "B",
+    "committee": "unpriv"
+  },
+  {
+    "name": "Byte and Halfword Atomic Memory Operations (Zabha)",
+    "date": "April 2024",
+    "extensions": "Zabha",
+    "committee": "unpriv"
+  },
+  {
+    "name": "RISC-V Supervisor Counter Delegation",
+    "date": "March 2024",
+    "extensions": "Smcdeleg, Ssccfg",
+    "committee": "priv"
+  },
+  {
+    "name": "May-Be-Operations",
+    "date": "March 2024",
+    "extensions": "Zimop, Zcmop",
+    "committee": "unpriv"
+  },
+  {
+    "name": "RISC-V Indirect CSR Access (Smcsrind/Sscsrind)",
+    "date": "February 2024",
+    "extensions": "Smcsrind, Sscsrind",
+    "committee": "priv"
+  },
+  {
+    "name": "RISC-V Integer Conditional (Zicond) operations extension",
+    "date": "November 2023",
+    "extensions": "Zicond",
+    "committee": "unpriv"
+  },
+  {
+    "name": "Hardware Updating of PTE A/D Bits (Svadu)",
+    "date": "November 2023",
+    "extensions": "Svadu",
+    "committee": "priv"
+  },
+  {
+    "name": "RISC-V Cycle and Instret Privilege Mode Filtering (Smcntrpmf)",
+    "date": "November 2023",
+    "extensions": "Smcntrpmf",
+    "committee": "priv"
+  },
+  {
+    "name": "Atomic Compare-and-Swap (CAS) Instructions (Zacas)",
+    "date": "November 2023",
+    "extensions": "Zacas",
+    "committee": "unpriv"
+  },
+  {
+    "name": "RISC-V Cryptography Extensions Volume II: Vector Instructions",
+    "date": "September 2023",
+    "extensions": "Zvbb, Zvbc, Zvkb, Zvkg, Zvkn, Zvknc, Zvkned, Zvkng, Zvknha, Zvknhb, Zvks, Zvksc, Zvksed, Zvksg, Zvksh, Zvkt",
+    "committee": "unpriv"
+  },
+  {
+    "name": "\"Zfa\" Standard Extension for Additional Floating-Point Instructions",
+    "date": "September 2023",
+    "extensions": "Zfa",
+    "committee": "unpriv"
+  },
+  {
+    "name": "RISC-V Advanced Interrupt Architecture",
+    "date": "June 2023",
+    "extensions": "Smaia, Ssaia",
+    "committee": "priv"
+  },
+  {
+    "name": "\"Zvfh/Zvfhmin:\" Vector Extension for Half-Precision Floating-Point Arithmetic/Vector Extension for Minimal Half-Precision Floating-Point Arithmetic",
+    "date": "June 2023",
+    "extensions": "Zvfh, Zvfhmin",
+    "committee": "unpriv"
+  },
+  {
+    "name": "\"Zihintntl\" Non-Temporal Locality Hints",
+    "date": "May 2023",
+    "extensions": "Zihintntl",
+    "committee": "unpriv"
+  },
+  {
+    "name": "RISC-V Code Size Reduction",
+    "date": "April 2023",
+    "extensions": "Zca, Zcb, Zcd, Zce, Zcf, Zcmp, Zcmt",
+    "committee": "unpriv"
+  },
+  {
+    "name": "RISC-V Profiles",
+    "date": "March 2023",
+    "extensions": "RVA20, RVI20, RVA22",
+    "committee": "unpriv"
+  },
+  {
+    "name": "\"Zicntr\" and \"Zihpm\" Counters",
+    "date": "March 2023",
+    "extensions": "Zicntr, Zihpm",
+    "committee": "unpriv"
+  },
+  {
+    "name": "RV32E and RV64E Base Integer Instruction Sets",
+    "date": "January 2023",
+    "extensions": "RV32E/RV64E",
+    "committee": "unpriv"
+  },
+  {
+    "name": "\"Ztso\" Standard Extension for Total Store Ordering",
+    "date": "January 2023",
+    "extensions": "Ztso",
+    "committee": "unpriv"
+  },
+  {
+    "name": "RISC-V Wait-on-Reservation-Set (Zawrs) extension",
+    "date": "November 2022",
+    "extensions": "Zawrs",
+    "committee": "unpriv"
+  },
+  {
+    "name": "Zmmul Extension",
+    "date": "June 2022",
+    "extensions": "Zmmul",
+    "committee": "unpriv"
+  },
+  {
+    "name": "PMP Enhancements for memory access and execution prevention on Machine mode (Smepmp)",
+    "date": "November 2021",
+    "extensions": "Smepmp",
+    "committee": "priv"
+  },
+  {
+    "name": "RISC-V Base Cache Management Operation ISA Extensions",
+    "date": "November 2021",
+    "extensions": "Zicbom, Zicbop, Zicboz",
+    "committee": "unpriv"
+  },
+  {
+    "name": "RISC-V Bit-Manipulation ISA-extensions",
+    "date": "November 2021",
+    "extensions": "Zba, Zbb, Zbc, Zbs",
+    "committee": "unpriv"
+  },
+  {
+    "name": "RISC-V Count Overflow and Mode-Based Filtering Extension",
+    "date": "November 2021",
+    "extensions": "Sscofpmf",
+    "committee": "priv"
+  },
+  {
+    "name": "RISC-V Cryptography Extensions Volume I: Scalar & Entropy Source Instructions",
+    "date": "November 2021",
+    "extensions": "Zbkb, Zbkc, Zbkx, Zknd, Zkne, Zknh, Zksed, Zksh, Zkn, Zks, Zkt, Zk, Zkr",
+    "committee": "unpriv"
+  },
+  {
+    "name": "RISC-V State Enable Extension",
+    "date": "November 2021",
+    "extensions": "Smstateen",
+    "committee": "priv"
+  },
+  {
+    "name": "RISC-V \"stimecmp / vstimecmp\" Extension",
+    "date": "November 2021",
+    "extensions": "Sstc",
+    "committee": "priv"
+  },
+  {
+    "name": "RISC-V Vector Extension",
+    "date": "November 2021",
+    "extensions": "Zve32x, Zve32f, Zve64x, Zve64f, Zve64d, Zve, Zvl32b, Zvl64b, Zvl128b, Zvl256b, Zvl512b, Zvl1024b, Zvl, Zv",
+    "committee": "unpriv"
+  },
+  {
+    "name": "The RISC-V Instruction Set Manual Volume II: Privileged Architecture",
+    "date": "November 2021",
+    "extensions": "Sm1p12, Ss1p12, Sv57, Hypervisor, Svinval, Svnapot, Svpbmt",
+    "committee": "priv"
+  },
+  {
+    "name": "\"Zfh\" and \"Zfhmin\" Standard Extensions for Half-Precision Floating-Point",
+    "date": "November 2021",
+    "extensions": "Zfh, Zfhmin",
+    "committee": "unpriv"
+  },
+  {
+    "name": "\"Zfinx\", \"Zdinx\", \"Zhinx\", \"Zhinxmin\": Standard Extensions for Floating-Point in Integer Registers",
+    "date": "November 2021",
+    "extensions": "Zfinx, Zdinx, Zhinx, Zhinxmin",
+    "committee": "unpriv"
+  },
+  {
+    "name": "\"Zihintpause\" Pause Hint",
+    "date": "February 2021",
+    "extensions": "Zihintpause",
+    "committee": "unpriv"
+  },
+  {
+    "name": "The RISC-V Instruction Set Manual Volume I: Unprivileged ISA",
+    "date": "December 2019",
+    "extensions": "A, D, F, RV32I, RV64I, Zaamo, Zalrsc, Zicsr, Zifencei",
+    "committee": "unpriv"
+  },
+  {
+    "name": "The RISC-V Instruction Set Manual Volume II: Privileged Architecture",
+    "date": "December 2019",
+    "extensions": "C, M, Q, Sm1p11, Ss1p11, Sv32, Sv39, Sv48",
+    "committee": "priv"
+  }
+]

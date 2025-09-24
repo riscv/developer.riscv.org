@@ -40,7 +40,6 @@ const sidebars: SidebarsConfig = {
       label:'Reference',
       link: {type: 'doc', id: 'spec/reference'},
       items:[
-
         {
           type:'category',
           label:'The ISA Specification',
@@ -79,7 +78,6 @@ const sidebars: SidebarsConfig = {
               label:"RISC-V Profiles",
               id:"spec/profiles/riscv-profiles",
             },
-
           ],
         },    
         {
