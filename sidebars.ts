@@ -46,15 +46,25 @@ const sidebars: SidebarsConfig = {
           label:'The ISA Specification',
           // link: {type: 'doc', id: 'spec/isa'},
           items:[
+            // {
+            //   type:"link",
+            //   label:"ISA Volume 1: Priv",
+            //   href:"pathname:///docs/reference/isa/unpriv/intro.html",
+            // },
+            // {
+            //   type:"link",
+            //   label:"ISA Volume 2: Un-Priv",
+            //   href:"pathname:///docs/reference/isa/priv/priv-intro.html",
+            // },
             {
-              type:"link",
-              label:"ISA Volume 1: Priv",
-              href:"pathname:///docs/reference/isa/unpriv/intro.html",
+              type:"doc",
+              label:"ISA Volume 1: UnPrivileged",
+              id:"spec/isa1",
             },
             {
-              type:"link",
-              label:"ISA Volume 2: Un-Priv",
-              href:"pathname:///docs/reference/isa/priv/priv-intro.html",
+              type:"doc",
+              label:"ISA Volume 2: Privileged",
+              id:"spec/isa2",
             },
 
           ],
@@ -113,11 +123,13 @@ const sidebars: SidebarsConfig = {
           label:'Platform Software',
           collapsed:true,
           items:[
+            'spec/non-isa/brs',
             'spec/non-isa/functional-fixed',
+            'spec/non-isa/io-mapping',
+            'spec/non-isa/rpmi',
             'spec/non-isa/semihosting',
             'spec/non-isa/sbi',
             'spec/non-isa/uefi',
-            'spec/non-isa/io-mapping',
           ],
         },
         {
@@ -126,6 +138,7 @@ const sidebars: SidebarsConfig = {
           collapsed:true,
           items:[
             'spec/non-isa/abi',
+            'spec/non-isa/vector-c',
           ],
         },
         // {
