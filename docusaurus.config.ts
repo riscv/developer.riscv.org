@@ -11,15 +11,15 @@ const config: Config = {
   staticDirectories: ['antora/build/', 'static'],
 
   // Set the production url of your site here
-  url: 'https://developer.riscv.org',
+  url: 'https://riscv.github.io/developer.riscv.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/developer.riscv.org/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'riscv', // Usually your GitHub org/user name.
-  projectName: 'docs.riscv.org', // Usually your repo name.
+  projectName: 'developer.riscv.org', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
