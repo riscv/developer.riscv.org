@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     title: 'Spec Developers',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     button:'Start Reading',
-    link: '/docs/spec/intro',
+    link: '/docs/spec/reference',
     description: (
       <>
         For those contributing to the ISA or another specification. 
