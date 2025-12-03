@@ -1,0 +1,23 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="100" cy="100" r="96" fill="#F0F4F8" stroke="#005493" stroke-width="4"/>
+
+<g transform="translate(40, 40)"> <g fill="#FFFFFF" stroke="#4682B4" stroke-width="3"> <rect x="5" y="15" width="90" height="110" rx="4" /> <rect x="10" y="10" width="90" height="110" rx="4" /> <rect x="15" y="5" width="90" height="110" rx="4" /> </g>
+
+<g stroke="#4682B4" stroke-width="3" stroke-linecap="round">
+  <line x1="30" y1="25" x2="85" y2="25"/>
+  <line x1="30" y1="40" x2="85" y2="40"/>
+  <line x1="30" y1="55" x2="65" y2="55"/>
+  <line x1="30" y1="70" x2="85" y2="70"/>
+  <line x1="30" y1="85" x2="75" y2="85"/>
+</g>
+
+<g transform="translate(70, 60) rotate(-30)">
+  <circle cx="0" cy="0" r="35" fill="rgba(135, 206, 235, 0.3)" stroke="#005493" stroke-width="5"/>
+  <path d="M25 25 L50 50" stroke="#005493" stroke-width="8" stroke-linecap="round"/>
+  
+  <g transform="translate(-18, -22) scale(0.35)">
+    <path d="M83.535 94.6063L51.9839 39.9623L20.4328 94.6063L36.2084 67.2843L51sd.9839 12.6404L67.7595 67.2843L83.535 94.6063ZM51.9839 0L0 90.0239L15.7756 117.346L51.9839 54.6241L88.1923 117.346L103.968 90.0239L51.9839 0Z" fill="#005493"/>
+  </g>
+</g>
+</g>
+
+</svg>
