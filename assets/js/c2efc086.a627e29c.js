@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdeveloper_riscv_org=globalThis.webpackChunkdeveloper_riscv_org||[]).push([[2854],{3451:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/developer.riscv.org/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

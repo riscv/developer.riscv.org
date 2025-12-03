@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdeveloper_riscv_org=globalThis.webpackChunkdeveloper_riscv_org||[]).push([[1903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/developer.riscv.org/blog","blogTitle":"Blog","authorsListPath":"/developer.riscv.org/blog/authors"}')}}]);
