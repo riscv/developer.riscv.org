@@ -39,12 +39,18 @@ const config: Config = {
   
   scripts: [
     {
-      // for more config options see here: https://docs.kapa.ai/integrations/website-widget/configuration
+      // Kapa.ai - for more config options see here: https://docs.kapa.ai/integrations/website-widget/configuration
       src: "https://widget.kapa.ai/kapa-widget.bundle.js",
       "data-website-id": "8b156a4f-5ea3-41d2-bb79-b5a145969b6a",
       "data-project-name": "RISC-V Developer Portal",
       "data-project-color": "#fdb515",
-      "data-project-logo": "/developer.riscv.org/img/logo.svg",
+      "data-project-logo": "/developer.riscv.org/img/logo.png",
+      "data-modal-example-questions": "How to get started with RISC-V?, Tell me about the Vector extension, What is the Base Instruction Format?",
+      "data-button-width": "6rem",
+      "data-button-text": "Question?",
+      // "data-modal-image-hide": "true",
+      "data-modal-ask-ai-input-placeholder": "Ask me anythiing about RISC-V...",
+      "data-modal-title":"RISC-V Universal Search AI",
       async: true,
     },
   ],
