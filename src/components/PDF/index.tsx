@@ -34,7 +34,7 @@ export default function PDF({ download, title, height, width }: PdfProps) {
           <a href={useBaseUrl(download)} download={title}>Download the `{title}`</a>        
       </button>
 
-      <object data={download} type="application/pdf" width={pdfWidth} height={pdfHeight} >
+      <object data={useBaseUrl(download)} type="application/pdf" width={pdfWidth} height={pdfHeight} >
           <p>
             PDF not displaying? <a href={download}> Download it here.</a> 
           </p>
