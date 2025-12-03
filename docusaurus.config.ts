@@ -36,6 +36,18 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  
+  scripts: [
+    {
+      // for more config options see here: https://docs.kapa.ai/integrations/website-widget/configuration
+      src: "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "data-website-id": "8b156a4f-5ea3-41d2-bb79-b5a145969b6a",
+      "data-project-name": "RISC-V Developer Portal",
+      "data-project-color": "#fdb515",
+      "data-project-logo": "/developer.riscv.org/img/logo.svg",
+      async: true,
+    },
+  ],
 
   presets: [
     [
