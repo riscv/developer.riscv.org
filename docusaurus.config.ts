@@ -6,12 +6,12 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'RISC-V Developer Portal',
-  tagline: 'RISC-V: The Open Standard ISA',
+  tagline: 'Get Started Here',
   favicon: 'img/favicon.ico',
   staticDirectories: ['antora/build/', 'static'],
 
   // Set the production url of your site here
-  url: 'https://riscv.github.io/developer.riscv.org',
+  url: 'https://developer.riscv.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/developer.riscv.org/',
@@ -95,47 +95,47 @@ const config: Config = {
           position:'left',
           to:"/docs/spec/reference",
         },
-        // {
-        //   label:'Developers',
-        //   position:'left',
-        //   items:[
-        //     {
-        //       type: 'doc',
-        //       docId: 'spec/reference',
-        //       label: 'Specification Developers',
-        //       // docsPluginId: 'tool1',
-        //       to:"/docs/spec/reference",
-        //     },
-        //     {
-        //       type: 'doc',
-        //       docId: 'hardware/overview',
-        //       label: 'Hardware Developers',
-        //       // docsPluginId: 'tool1',
-        //       to:"/docs/hardware/overview",
-        //     },
-        //     {
-        //       type: 'doc',
-        //       docId: 'software/overview',
-        //       label: 'Software Developers',
-        //       // docsPluginId: 'tool1',
-        //       to:"/docs/software/overview",
-        //     },
-        //   ]
-        // },
-        // {
-        //   label: 'Blog',
-        //   to: '/blog',  
-        //   position: 'left'
-        // },
+        {
+          label:'Developers',
+          position:'left',
+          items:[
+            {
+              type: 'doc',
+              docId: 'spec/reference',
+              label: 'Specification Developers',
+              // docsPluginId: 'tool1',
+              to:"/docs/spec/reference",
+            },
+            {
+              type: 'doc',
+              docId: 'hardware/overview',
+              label: 'Hardware Developers',
+              // docsPluginId: 'tool1',
+              to:"/docs/hardware/overview",
+            },
+            {
+              type: 'doc',
+              docId: 'software/overview',
+              label: 'Software Developers',
+              // docsPluginId: 'tool1',
+              to:"/docs/software/overview",
+            },
+          ]
+        },
+        {
+          label: 'Blog',
+          to: '/blog',  
+          position: 'left'
+        },
         {
           label: 'Events', 
           href: 'https://riscv.org/community/calendar/', 
           position: 'left'
         },
-        // {
-        //   type: 'search',
-        //   position:'right',
-        // },
+        {
+          type: 'search',
+          position:'right',
+        },
 
       ],
     },
