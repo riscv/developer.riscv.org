@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'RISC-V Developer Portal',
-  tagline: 'Get Started Here',
+  tagline: 'Build Awesome.',
   favicon: 'img/favicon.ico',
   staticDirectories: ['antora/build/', 'static'],
 
@@ -127,11 +127,11 @@ const config: Config = {
           to: '/blog',  
           position: 'left'
         },
-        {
-          label: 'Events', 
-          href: 'https://riscv.org/community/calendar/', 
-          position: 'left'
-        },
+        // {
+        //   label: 'Events', 
+        //   href: 'https://riscv.org/community/calendar/', 
+        //   position: 'left'
+        // },
         {
           type: 'search',
           position:'right',

@@ -12,8 +12,8 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Spec Developers',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Specification Developers',
+    Svg: require('@site/static/img/specdev.png').default,
     button:'Start Reading',
     link: '/docs/spec/reference',
     description: (
@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Hardware Developers',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/hardwaredev.png').default,
     button:'Start Building',
     link: '/docs/hardware/overview',
     description: (
@@ -35,7 +35,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Software Developers',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/softwaredev.png').default,
     button:'Start compiling',
     link: '/docs/software/overview',
     description: (
@@ -50,7 +50,8 @@ function Feature({title, Svg,button,link, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {/*<Svg className={styles.featureSvg} role="img" />*/}
+        <img src={Svg} role="img" width="200" height="200"/>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
