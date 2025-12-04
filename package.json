@@ -1,5 +1,5 @@
 {
-  "name": "docs-riscv-org",
+  "name": "developer-riscv-org",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -15,9 +15,11 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "3.7.0",
-    "@docusaurus/plugin-google-tag-manager": "^3.8.1",
-    "@docusaurus/preset-classic": "3.7.0",
+    "@cmfcmf/docusaurus-search-local": "^2.0.1",
+    "@docusaurus/core": "^3.9.2",
+    "@docusaurus/plugin-google-tag-manager": "^3.9.2",
+    "@docusaurus/preset-classic": "^3.9.2",
+    "@docusaurus/theme-search-algolia": "^3.9.2",
     "@fontsource/open-sans": "^5.2.5",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
@@ -35,9 +37,9 @@
     "webpack": "^5.99.8"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.7.0",
-    "@docusaurus/tsconfig": "3.7.0",
-    "@docusaurus/types": "3.7.0",
+    "@docusaurus/module-type-aliases": "^3.9.2",
+    "@docusaurus/tsconfig": "^3.9.2",
+    "@docusaurus/types": "^3.9.2",
     "typescript": "~5.6.2",
     "webpack": "^5.99.8"
   },
