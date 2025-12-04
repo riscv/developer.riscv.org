@@ -36,6 +36,7 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  // plugins: ["@cmfcmf/docusaurus-search-local"],
   
   scripts: [
     {
@@ -54,6 +55,11 @@ const config: Config = {
       "data-search-mode-default":"true",                // open in search by default
       // "data-search-source-ids-include":"id1,id2",       //only search specific sources
       // "data-search-source-ids-order":"id1,id2",         //control grouping/order
+      "data-modal-open-on-command-k":"true",
+      "data-modal-command-k-search-mode-default":"true",
+      "data-modal-override-open-selector-search":"div.searchbar", // Attach the widget to a specific class name
+      // "data-modal-override-open-selector-search":"#navbarSearchContainer",  // Attach the widget to an element ID
+      "data-button-hide":"true",
 
       async: true,
     },
@@ -97,6 +103,7 @@ const config: Config = {
   ],
 
   themeConfig: {
+    
     colorMode: {
       defaultMode: 'light',
       disableSwitch: true,
@@ -217,7 +224,6 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} RISC-V International`,
     },
-
     // plugins: [
     //   [
     //     "@cmfcmf/docusaurus-search-local",
