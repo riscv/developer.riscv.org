@@ -51,6 +51,10 @@ const config: Config = {
       // "data-modal-image-hide": "true",
       "data-modal-ask-ai-input-placeholder": "Ask me anythiing about RISC-V...",
       "data-modal-title":"RISC-V Universal Search AI",
+      "data-search-mode-default":"true",                // open in search by default
+      // "data-search-source-ids-include":"id1,id2",       //only search specific sources
+      // "data-search-source-ids-order":"id1,id2",         //control grouping/order
+
       async: true,
     },
   ],
